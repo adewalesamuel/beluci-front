@@ -55,3 +55,8 @@ a.btn-outilne-primary:hover, .btn-outilne-primary:active {
   transform: translateZ(-50%);
   z-index: -1;
 }
+
+#presidentImg {
+  top: -13%;
+  right: 20px;
+}

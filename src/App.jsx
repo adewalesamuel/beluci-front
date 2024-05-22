@@ -6,6 +6,7 @@ import {
 import { BsEnvelopeFill as EnvelopeIcon } from 'react-icons/bs';
 import logo from './assets/logo.jpg';
 import heroBg from './assets/images/hero-bg.jpg';
+import presidentImg from './assets/images/president.jpg';
 
 function App() {
 
@@ -121,7 +122,7 @@ function App() {
                         maxHeight: '600px'
                     }}/> 
                 </div>
-                <div className="w-100 mb-5">
+                <div className="w-100 mb-2">
                     <div className="mx-auto px-2" id="heroContent" style={{maxWidth: '1000px'}}>
                         <div className="card">
                             <div className="card-title pt-3">
@@ -157,15 +158,63 @@ function App() {
                 </div>
             </section>
             <section className="container my-2" id="homeEvents">
-                <div className="position-relative">
+                <div className="position-relative my-4">
                     <hr className="border-primary position-absolute w-100 m-0 title-line"/>
                     <h3 className="text-center p-2">
                         <span className="bg-white d-inline-block p-2">Nos évènements</span>
                     </h3>    
                 </div>
+                <div className="row align-items-strech">
+                    <div className="col-12 col-lg-6 position-relative" style={{
+                        backgroundImage: `url(${heroBg})`,
+                        backgroudSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }}>
+                    </div>
+                    <div className="col-12 col-lg-6 p-5 bg-primary text-white">
+                        <h3 className="text-uppercase">Nos prochains évènements</h3>
+                        <p className="text-uppercase">
+                            Cocktail de networking spécial mission éconimique belge
+                        </p>
+                        <Link to={'/'} className='btn bg-white text-primary 
+                        rounded-pill px-3 mt-3'>
+                            <small>Voir tous nos évènements</small>
+                        </Link>
+                    </div>
+                </div>
             </section>
-            <section className="mt-5">
-
+            <section className="mt-5 bg-light py-5">
+                <div className="container position-relative">
+                    <div className="bg-primary p-4 text-white" style={{maxWidth: '700px'}}>
+                        <h1 className="mb-3">Mot du président</h1>
+                        <p>
+                            « La BELUCI a construit et développé des relations professionnelles 
+                            durables depuis près de 40 ans de manière ininterrompue. Le réseau 
+                            développé en Côte d&apos;Ivoire englobe les multinationales du BeLux, les 
+                            grandes entreprises et PME locales, les incubateurs, les Chambres de 
+                            commerces, ainsi que les institutions publiques, parapubliques et non 
+                            gouvernementales. En 2022, j&apos;ai eu l&apos;honneur d&apos;intégrer le 
+                            Conseil de la BLCCA (Belgian-Luxembourg Chambers of Commerce abroad) en 
+                            tant qu&apos;Administrateur, et Maximilien Lemaire, le fondateur de la BELUCI, 
+                            est membre du bureau central national de la Chambre de commerce du Grand-Duché 
+                            de Luxembourg, ce qui positionne donc La BELUCI également fortement sur la scène 
+                            internationale. C&apos;est autour de cet aspect que j&apos;ambitionne 
+                            d&apos;orienter mon mandat en tant que Président de la Chambre belge et 
+                            luxembourgeoise de Côte d&apos;Ivoire : être au cœur des synergies entre nos 
+                            3 pays afin de faire éclore des partenariats fructueux et de développer 
+                            des alliances toujours plus solides. »
+                        </p>
+                        <div className="mt-4">
+                            <h5 className='mb-1'>Pierre DECLERCK</h5>
+                            <p>Président</p>
+                        </div>
+                    </div>
+                    <div className="position-absolute" id="presidentImg">
+                        <img src={presidentImg} className="img-fluid" alt="Président de la beluci" 
+                        width={303} height={487} loading="lazy"/>
+                    </div>
+                </div>
             </section>
         </main>
     </BrowserRouter>
