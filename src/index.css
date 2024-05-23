@@ -23,6 +23,15 @@ body {
   border-color: var(--primary-color) !important;
 }
 
+.border-white {
+  border-color: white !important;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 #mainMenu nav > a.nav-item {
   transition: color 300ms 100ms ease;
 }
@@ -52,11 +61,36 @@ a.btn-outilne-primary:hover, .btn-outilne-primary:active {
 .title-line {
   top: 50%;
   left: 0;
-  transform: translateZ(-50%);
-  z-index: -1;
+  transform: translateY(-50%);
+  z-index: 0;
 }
 
 #presidentImg {
   top: -13%;
   right: 20px;
+}
+
+#homePresident .text-content::after {
+  content: " ";
+  position: absolute;
+  top: 10%;
+  right: -8.6%;
+  border-width: 2rem;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
+#homeTeam .team-card-item, #homeTeam .team-card-item .icon {
+  transition: var(--transition-duration) ease;
+}
+
+#homeTeam .team-card-item:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+#homeTeam .team-card-item:hover .icon {
+  color: var(--primary-color) !important;
+  background-color: white !important;
+  border-radius: 10rem !important;
 }
