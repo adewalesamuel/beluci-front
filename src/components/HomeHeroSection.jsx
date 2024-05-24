@@ -2,7 +2,7 @@ export function HomeHeroSection({data}) {
     return (
         <section id={data.name} className="d-flex flex-column">
             <div className="w-100">
-                <img src={data.backgroundImage} className="w-100 bg-primary" 
+                <img src={data.backgroundImgUrl} className="w-100 bg-primary" 
                 width={1920} height={834} loading="lazy" style={{
                     objectFit: 'cover',
                     maxHeight: '600px'

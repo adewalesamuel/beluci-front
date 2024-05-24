@@ -40,7 +40,7 @@ export const MockData = {
             sectionList: [
                 {
                     name: 'homeHero',
-                    backgroundImage: heroBg,
+                    backgroundImgUrl: heroBg,
                     title: 'Chambre de commerce belge et luxembougeoise de côte d\'ivoire',
                     description: `La BELUCI a pour mission, entre autres, d’accompagner les sociétés belgo-luxembourgeoises souhaitant s'implanter en Côte d'Ivoire, d'apporter un appui aux entreprises belges installées localement, de soutenir les sociétés ivoiriennes souhaitant entrer en contact et travailler avec des entreprises belgo-luxembourgeoises, de représenter ses adhérents auprès des autorités ivoiriennes mais également de défendre leurs intérêts et de créer des rendez-vous de networking pour faciliter les contacts et ce dans une ambiance agréable. Adhérer à la BELUCI c'est ainsi vous donner la possibilité d’améliorer la compétitivité de votre entreprise, développer de nouvelles opportunités d'affaires et étendre votre réseau.`,
                     buttonText: 'Lire la suite'
@@ -102,6 +102,52 @@ export const MockData = {
                         }
                     ]
                 }
+            ]
+        },
+        'services': {
+            sectionList: [
+                {
+                    name: 'titleHeader',
+                    title: 'Nos Services',
+                    backgroundImgUrl: heroBg
+                },
+                {
+                    name: 'serviceSection',
+                    title: 'Nous accompagnons nos membres dans le développement de leur entreprise',
+                    description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir sur de nouveaux marchés et une toile de contacts professionels pour échanger avec des millires d\'entreprises à traveres le réseau des Chambres de Commerce et d\'industrie de Belgique, au Grand-Duché de Luxembourg et en Côte d\'Ivoire',
+                    serviceList: [
+                        {
+                            number: '01',
+                            title: 'Propositions d\'affaires',
+                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                        },
+                        {
+                            number: '02',
+                            title: 'Networking',
+                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                        },
+                        {
+                            number: '03',
+                            title: 'Accès continu',
+                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                        },
+                        {
+                            number: '04',
+                            title: 'Informations & communications',
+                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                        },
+                        {
+                            number: '05',
+                            title: 'Conseil & Acompagnement',
+                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                        },
+                        {
+                            number: '06',
+                            title: 'Formations',
+                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                        }
+                    ]
+                },
             ]
         }
     }

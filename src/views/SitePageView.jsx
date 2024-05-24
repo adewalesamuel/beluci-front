@@ -10,7 +10,9 @@ export function PageView() {
         homeEvent: Components.HomeEventSection,
         homePresident: Components.HomePresidentSection,
         homeTeamDetail: Components.HomeTeamDetailSection,
-        homeTeamList: Components.HomeTeamListSection
+        homeTeamList: Components.HomeTeamListSection,
+        titleHeader: Components.TitleHeader,
+        serviceSection: Components.ServiceSection
     }
 
     const {pathname} = useLocation();
