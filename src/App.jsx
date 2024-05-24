@@ -1,30 +1,15 @@
-import { BrowserRouter } from "react-router-dom"
-import { Components } from "./components";
-import { MockData } from "./MockData";
-import { Fragment } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Views } from "./views";
+import { Layouts } from "./layouts";
 
 function App() {
-    const SectionMap = {
-        homeHero: Components.HomeHeroSection,
-        homeEvent: Components.HomeEventSection,
-        homePresident: Components.HomePresidentSection,
-        homeTeamDetail: Components.HomeTeamDetailSection,
-        homeTeamList: Components.HomeTeamListSection
-    }
-
     return (
         <BrowserRouter>
-            <Components.Header />
-            <main>
-                {MockData.page.sectionList.map((sectionData, index) => {
-                    const SectionComponent = SectionMap[sectionData.name] ?? null;
-                    return (<Fragment key={index}>
-                        <SectionComponent data={sectionData} />
-                    </Fragment>)
-                })}
-                <Components.CTASection />
-            </main>
-            <Components.Footer />
+            <Layouts.MainLayout>
+                <Routes>
+                    <Route path='*' element={<Views.PageView />}/>
+                </Routes>    
+            </Layouts.MainLayout>
         </BrowserRouter>
     )
 }
