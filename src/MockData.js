@@ -1,5 +1,6 @@
-import heroBg from './assets/images/hero-bg.jpg';
-import presidentImg from './assets/images/president.jpg';
+import heroBg from './assets/images/hero-bg.jpg'
+import presidentImg from './assets/images/president.jpg'
+import teamImg from './assets/images/team.jpg';
 
 export const MockData = {
     menuItems: [
@@ -59,10 +60,46 @@ export const MockData = {
             {
                 name: 'homePresident',
                 title: 'Mot du président',
-                description: ` « La BELUCI a construit et développé des relations professionnelles  durables depuis près de 40 ans de manière ininterrompue. Le réseau  développé en Côte d';Ivoire englobe les multinationales du BeLux, les  grandes entreprises et PME locales, les incubateurs, les Chambres de  commerces, ainsi que les institutions publiques, parapubliques et non  gouvernementales. En 2022, j';ai eu l';honneur d';intégrer le  Conseil de la BLCCA (Belgian-Luxembourg Chambers of Commerce abroad) en  tant qu';Administrateur, et Maximilien Lemaire, le fondateur de la BELUCI,  est membre du bureau central national de la Chambre de commerce du Grand-Duché  de Luxembourg, ce qui positionne donc La BELUCI également fortement sur la scène  internationale. C';est autour de cet aspect que j';ambitionne  d';orienter mon mandat en tant que Président de la Chambre belge et  luxembourgeoise de Côte d';Ivoire : être au cœur des synergies entre nos  3 pays afin de faire éclore des partenariats fructueux et de développer des alliances toujours plus solides. »`,
-                authorName: 'Piere DECLERCK',
+                description: ` « La BELUCI a construit et développé des relations professionnelles  durables depuis près de 40 ans de manière ininterrompue. Le réseau  développé en Côte d'Ivoire englobe les multinationales du BeLux, les  grandes entreprises et PME locales, les incubateurs, les Chambres de  commerces, ainsi que les institutions publiques, parapubliques et non  gouvernementales. En 2022, j'ai eu l'honneur d'intégrer le  Conseil de la BLCCA (Belgian-Luxembourg Chambers of Commerce abroad) en  tant qu'Administrateur, et Maximilien Lemaire, le fondateur de la BELUCI,  est membre du bureau central national de la Chambre de commerce du Grand-Duché  de Luxembourg, ce qui positionne donc La BELUCI également fortement sur la scène  internationale. C'est autour de cet aspect que j'ambitionne  d'orienter mon mandat en tant que Président de la Chambre belge et  luxembourgeoise de Côte d'Ivoire : être au cœur des synergies entre nos  3 pays afin de faire éclore des partenariats fructueux et de développer des alliances toujours plus solides. »`,
+                authorName: 'Pierre DECLERCK',
                 authorJob: 'Président',
                 authorImgUrl: presidentImg,
+            },
+            {
+                name: 'homeTeamList',
+                title: 'Présentation du conseil d\'administration',
+                teamMemberList: [
+                    {
+                        name: 'Pierre DECLERCK',
+                        job: 'Président',
+                        linkedinUrl: '',
+                    },
+                    {
+                        name: 'Paulina ADEMOLA',
+                        job: 'Assistante administrative',
+                        linkedinUrl: '(+225) 07 07 40 96 72'
+                    }
+                ]
+            },
+            {
+                name: 'homeTeamDetail',
+                title: 'Présentation du conseil d\'administration',
+                imageLandscapeUrl: teamImg,
+                imagePortraitUrl: presidentImg,
+                teamMemberList: [
+                    {
+                        name: 'Salomé YSEBAERT',
+                        job: 'Responsable de l\'implémentation du projet PEM N\'ZASSA',
+                        email: 'salmome.beluci@gmail.com',
+                        phoneNumber: ''
+                    },
+                    {
+                        name: 'Paulina ADEMOLA',
+                        job: 'Assistante administrative',
+                        email: 'secretariat.beluci@gmail.com',
+                        phoneNumber: '(+225) 07 07 40 96 72'
+                    }
+                ]
             }
         ]
     }

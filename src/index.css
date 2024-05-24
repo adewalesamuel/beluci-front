@@ -80,16 +80,16 @@ a.btn-outilne-primary:hover, .btn-outilne-primary:active {
   border-color: transparent transparent transparent var(--primary-color);
 }
 
-#homeTeam .team-card-item, #homeTeam .team-card-item .icon {
+#homeTeamList .team-card-item, #homeTeamList .team-card-item .icon {
   transition: var(--transition-duration) ease;
 }
 
-#homeTeam .team-card-item:hover {
+#homeTeamList .team-card-item:hover {
   color: white;
   background-color: var(--primary-color);
 }
 
-#homeTeam .team-card-item:hover .icon {
+#homeTeamList .team-card-item:hover .icon {
   color: var(--primary-color) !important;
   background-color: white !important;
   border-radius: 10rem !important;

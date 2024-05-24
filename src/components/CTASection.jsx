@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-import heroBg from '../assets/images/hero-bg.jpg';
+import ctaBg from '../assets/images/cta-bg.jpg';
+
 
 export function CTASection(){
     return (
-        <section className="bg-light px-2 py-6 text-white" id="cta" style={{
-            backgroundImage: `url(${heroBg})`,
+        <section className="bg-light px-2 py-6 text-white" id="cta" 
+        style={{
+            backgroundImage: `url(${ctaBg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'

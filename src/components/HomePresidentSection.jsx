@@ -1,6 +1,6 @@
 export function HomePresidentSection({data}) {
     return (
-        <section className="mt-5 bg-light py-5" id={data.naem}>
+        <section className="mt-5 bg-light py-5" id={data.name}>
             <div className="container position-relative">
                 <div className="bg-primary p-4 text-white text-content 
                 position-relative col-12 col-md-8">
