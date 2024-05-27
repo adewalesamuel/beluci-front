@@ -149,6 +149,68 @@ export const MockData = {
                     ]
                 },
             ]
+        },
+        'pem-n-zassa': {
+            sectionList: [
+                {
+                    name: 'titleHeader',
+                    title: 'PEM N\'ZASSA',
+                    backgroundImgUrl: heroBg
+                },
+                {
+                    name: 'pemAboutSection',
+                    title: 'A propos du projet :',
+                    description: 'Depuis janvier 2024, la BELUCI s\'investit pleinement dans le projet PEM N\'ZASSA, une initiative visant à relier les écosystèmes entrepreneuriaux ivoirien et belge. Financé par l\'Union européenne et piloté par Enabel, l\'Agence belge de développement, ce projet met en avant les entrepreneurs, cherchant à créer des partenariats avantageux pour les entreprises des deux pays. Le PEM N\'ZASSA accompagne les entrepreneurs ivoiriens lors de leurs vovages d\'affaires en Belgique, facilitant ainsi leur intégration dans l\'écosystème belge. La mission de la BELUCI s\'aligne parfaitement avec les objectifs du projet PEM N\'ZASSA. Nous soutenons les sociétés belgo-luxembourgeoises désireuses de s\'implanter en Côte d\'Ivoire, apportons notre soutien aux entreprises belges déjà établies, et œuvrons à favoriser la collaboration entre les entreprises ivoiriennes et celles de la région belgo-luxembourgeoise. Nous organisons également des événements de réseautage visant à faciliter les échanges et à créer des opportunités de collaboration.',
+                    backgroundImgUrl: presidentImg
+                },
+                {
+                    name: 'pemFeatureSection',
+                    title: 'Qu\'offre exactement le PEM N\'ZASSA ?',
+                    featureList: [
+                        {
+                            number: '01',
+                            description: 'Accès à des réseaux d\'entrepreneurs, d\'entreprises et d\'incubateurs en Côte d\'Ivoire et en Belgique.'
+                        },
+                        {
+                            number: '02',
+                            description: 'Un matching avec une ou plusieurs entreprises ivoiriennes ou belges après un processus de sélection rigoureux.'
+                        },
+                        {
+                            number: '03',
+                            description: 'Mise en relation avec les agences publiques ivoiriennes ou belges.'
+                        },
+                        {
+                            number: '04',
+                            description: 'Organisation d\'événements et de rencontres B2B avec des entrepreneurs ivoiriens et belges.'
+                        }
+                    ],
+                    questionList: [
+                        'Vous êtes entrepreneur basé en Belgique et intéressé par la Côte d\'Ivoire ?',
+                        'Ou entrepreneur ivoirien intéressé par la Belgique ?'
+                    ],
+                    ctaList: [
+                        'Alors, le projet PEM N\'ZASSA est fait pour vous !',
+                        'Voici les différentes étapes :'
+                    ],
+                    stepList: [
+                        {
+                            number: 'Étape 1',
+                            title: 'LE MATCHING',
+                            description: 'Après votre inscription, nous vous mettons en relation avec un entrepreneur ivoirien ou belge actif dans votre secteur d\'activité sélectionné par un comité d\'experts. Si vous avez un intérêt mutuel à dévelooper un partenariat nous orgeniconc le vovece d\'affaires de l\'entrenreneur ivoirien en Beloique'
+                        },
+                        {
+                            number: 'Étape 2',
+                            title: 'LA RENCONTRE EN BELGIQUE',
+                            description: 'Le vovage d\'affaires, entièrement financé par Enabel, vous permet de vous rencontrer directement en Belgique et de participer à plusieurs événements et rencontres B2B avec des entrepreneurs ivoiriens et belges.'
+                        },
+                        {
+                            number: 'Étape 3',
+                            title: 'LE SUIVI DU PARTENARIAT',
+                            description: 'Le PEM soutient également le partenariat après le voyage d\'affaires. Compte tenu des agendas très chargés des entrepreneurs.l\'accompaanement du proiet reste flexible et adapté aux besoins des participants et de leur perteneriet'
+                        },
+                    ]
+                },
+            ]
         }
     }
 }
