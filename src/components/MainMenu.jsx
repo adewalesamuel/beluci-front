@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import logo from '../assets/logo.jpg';
 import { 
     AiFillHome as HomeIcon,
-    AiOutlineUsergroupAdd as UserGroupIcon } from "react-icons/ai";
+    AiOutlineUsergroupAdd as UserGroupIcon,
+    AiOutlineMenu as MenuIcon } from "react-icons/ai";
 
 export function MainMenu({data}) {
     return (
@@ -15,7 +16,7 @@ export function MainMenu({data}) {
                         width={100} height={50} />
                     </Link>
                 </div>
-                <nav className="d-flex align-items-center">
+                <nav className="d-lg-flex align-items-center d-none">
                     {data.map(((menuItem, index) => {
                         if (menuItem.slug === 'accueil') {
                             return (
@@ -54,9 +55,11 @@ export function MainMenu({data}) {
                     }))}
                     
                 </nav>
-                <Link to={'/membres'} className="btn btn-link text-primary text-decoration-none">
+                <Link to={'/devenir-membre'} className="btn btn-link text-primary 
+                text-decoration-none d-none d-lg-inline-block">
                     <UserGroupIcon className="text-primary" size={25}/> Membres
                 </Link>
+                <button className="d-inline-block d-lg-none btn"><MenuIcon size={25} /></button>
             </div>
         </div>
     )

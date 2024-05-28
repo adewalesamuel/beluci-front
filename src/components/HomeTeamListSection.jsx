@@ -14,8 +14,8 @@ export function HomeTeamListSection({data}) {
             <div className="row flex-wrap align-content-stretch">
                {data.teamMemberList.map((teamMember, index) => {
                 return (
-                    <div className="col-6 col-md-2 col-lg-3 mb-4" key={index}>
-                        <div className="border border-primary p-3 team-card-item">
+                    <div className="col-6 col-md-4 col-lg-3 mb-4" key={index}>
+                        <div className="border border-primary p-3 team-card-item h-100">
                             <h5 className="mb-1">{teamMember.name}</h5>
                             <p>{teamMember.job}</p>
                             <div className="mt-2">

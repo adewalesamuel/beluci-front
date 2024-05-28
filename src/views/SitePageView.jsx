@@ -9,12 +9,13 @@ export function PageView() {
         homeHero: Components.HomeHeroSection,
         homeEvent: Components.HomeEventSection,
         homePresident: Components.HomePresidentSection,
-        homeTeamDetail: Components.HomeTeamDetailSection,
         homeTeamList: Components.HomeTeamListSection,
+        homeTeamDetail: Components.HomeTeamDetailSection,
         titleHeader: Components.TitleHeader,
-        serviceSection: Components.ServiceSection,
-        pemAboutSection: Components.PemAboutSection,
-        pemFeatureSection: Components.PemFeatureSection
+        service: Components.ServiceSection,
+        pemAbout: Components.PemAboutSection,
+        pemFeature: Components.PemFeatureSection,
+        memberAbout: Components.MemberAboutSection,
     }
 
     const {pathname} = useLocation();

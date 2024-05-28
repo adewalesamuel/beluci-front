@@ -76,10 +76,70 @@ export const MockData = {
                             linkedinUrl: '',
                         },
                         {
-                            name: 'Paulina ADEMOLA',
-                            job: 'Assistante administrative',
-                            linkedinUrl: '(+225) 07 07 40 96 72'
-                        }
+                            name: 'S. E.Mme Carole van EYLL',
+                            job: 'Órósirerte Fonneur',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'M. Maximilien LEMAIRE',
+                            job: 'Président Honoraire / Fondateur / Président d\'Honneur',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'Monsieur Lionel GREBAN',
+                            job: 'Vice-Président',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'M. Jean-Philippe DIEUDONNE',
+                            job: 'Secretaire General',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'Jean-François ALBRECHT',
+                            job: 'Trésorier',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'M. Antonioni BASSIT',
+                            job: 'Administrateur',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'Mme Nadine GELBGRAS',
+                            job: 'Administratrice',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'M. Morgan HANIN',
+                            job: 'Administrateur',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'Mme Monica MOLLON',
+                            job: 'Administrateur',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'M. Vincent PIERARD',
+                            job: 'Administrateur',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'Mme Valentine GEURTS AKPESS',
+                            job: 'Presidente honoraire',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'Mme Hilde LAMBILOTTE',
+                            job: 'Présidente honoraire',
+                            linkedinUrl: ''
+                        },
+                        {
+                            name: 'M. Karim RAJAN',
+                            job: 'Président honoraire',
+                            linkedinUrl: ''
+                        },
                     ]
                 },
                 {
@@ -112,7 +172,7 @@ export const MockData = {
                     backgroundImgUrl: heroBg
                 },
                 {
-                    name: 'serviceSection',
+                    name: 'service',
                     title: 'Nous accompagnons nos membres dans le développement de leur entreprise',
                     description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir sur de nouveaux marchés et une toile de contacts professionels pour échanger avec des millires d\'entreprises à traveres le réseau des Chambres de Commerce et d\'industrie de Belgique, au Grand-Duché de Luxembourg et en Côte d\'Ivoire',
                     serviceList: [
@@ -158,14 +218,14 @@ export const MockData = {
                     backgroundImgUrl: heroBg
                 },
                 {
-                    name: 'pemAboutSection',
+                    name: 'pemAbout',
                     title: 'A propos du projet :',
-                    description: 'Depuis janvier 2024, la BELUCI s\'investit pleinement dans le projet PEM N\'ZASSA, une initiative visant à relier les écosystèmes entrepreneuriaux ivoirien et belge. Financé par l\'Union européenne et piloté par Enabel, l\'Agence belge de développement, ce projet met en avant les entrepreneurs, cherchant à créer des partenariats avantageux pour les entreprises des deux pays. Le PEM N\'ZASSA accompagne les entrepreneurs ivoiriens lors de leurs vovages d\'affaires en Belgique, facilitant ainsi leur intégration dans l\'écosystème belge. La mission de la BELUCI s\'aligne parfaitement avec les objectifs du projet PEM N\'ZASSA. Nous soutenons les sociétés belgo-luxembourgeoises désireuses de s\'implanter en Côte d\'Ivoire, apportons notre soutien aux entreprises belges déjà établies, et œuvrons à favoriser la collaboration entre les entreprises ivoiriennes et celles de la région belgo-luxembourgeoise. Nous organisons également des événements de réseautage visant à faciliter les échanges et à créer des opportunités de collaboration.',
+                    description: 'Depuis novembre 2023, la BELUCI s\'est engagée en tant que partenaire dans le Projet de Mobilité des Entrepreneurs, le PEM N\'ZASSA, une initiative visant à établir des partenariats fructueux entre les entreprises ivoiriennes, belges et luxembourgeoises. En tant que Chambre de commerce, notre mission consiste à promouvoir le développement économique et les échanges commerciaux entre ces différents pays. Notre participation à PEM N\'ZASSA s\'inscrit parfaitement dans cette mission. Ce projet, financé par l\'Union Européenne et mis en œuvre par Enabel, l\'Agence belge de développement, offre une opportunité exceptionnelle de concrétiser notre engagement envers nos membres et partenaires. Nous mobilisons notre expertise et notre réseau pour soutenir les entreprises belges et luxembourgeoises dans leur expansion en Côte d\'Ivoire, tout en apportant un soutien actif aux entreprises déjà présentes sur ce marché dynamique. De plus, nous accompagnons également les entreprises ivoiriennes qui souhaitent établir des collaborations avec des entreprises belges ou européennes.En tant que partenaire privilégié, nous avons la capacité à faciliter les échanges commerciaux, à créer des synergies et opportunités concrètes et à instaurer un environnement propice au développement des affaires pour toutes les parties prenantes',
                     backgroundImgUrl: presidentImg
                 },
                 {
-                    name: 'pemFeatureSection',
-                    title: 'Qu\'offre exactement le PEM N\'ZASSA ?',
+                    name: 'pemFeature',
+                    title: 'Qu\'offre concrètement le PEM N\'ZASSA ?',
                     featureList: [
                         {
                             number: '01',
@@ -173,18 +233,19 @@ export const MockData = {
                         },
                         {
                             number: '02',
-                            description: 'Un matching avec une ou plusieurs entreprises ivoiriennes ou belges après un processus de sélection rigoureux.'
+                            description: 'Un processus de sélection rigoureux pour un matching avec une ou plusieurs entreprises ivoiriennes ou belges.'
                         },
                         {
                             number: '03',
-                            description: 'Mise en relation avec les agences publiques ivoiriennes ou belges.'
+                            description: 'Une mise en relation avec les agences publiques ivoiriennes ou belges.'
                         },
                         {
                             number: '04',
-                            description: 'Organisation d\'événements et de rencontres B2B avec des entrepreneurs ivoiriens et belges.'
+                            description: 'Une organisation d\'événements et de rencontres B2B avec des entrepreneurs ivoiriens et belges.'
                         }
                     ],
                     questionList: [
+                        'Notre projet bénéficie du soutien précieux de la Team Belgium, une coalition dynamique composée des services de l\'ambassade du Royaume de Belgique, d\'Enabel, des agences économiques telles que l\'Awex, Flanders Trade, et hub.brussels, ainsi que de nombreux autres acteurs engagés.',
                         'Vous êtes entrepreneur basé en Belgique et intéressé par la Côte d\'Ivoire ?',
                         'Ou entrepreneur ivoirien intéressé par la Belgique ?'
                     ],
@@ -209,6 +270,22 @@ export const MockData = {
                             description: 'Le PEM soutient également le partenariat après le voyage d\'affaires. Compte tenu des agendas très chargés des entrepreneurs.l\'accompaanement du proiet reste flexible et adapté aux besoins des participants et de leur perteneriet'
                         },
                     ]
+                },
+            ]
+        },
+        'devenir-membre': {
+            sectionList: [
+                {
+                    name: 'titleHeader',
+                    title: 'Devenir Membre',
+                    backgroundImgUrl: heroBg
+                },
+                {
+                    name: 'memberAbout',
+                    title: 'COMPLÉTEZ VOTRE FICHE D\'INSCRIPTION ET REJOIGNEZ NOTRE RÉSEAU EN CÔTE D\'IVOIRE!',
+                    description: 'Devenir membre de la Chambre de commerce belge et luxembourgeoise de Côte d\'Ivoire c\'est non seulement vous aider à faire des affaires en Côte d\'Ivoire depuis la Belgique ou le Luxembourg et à vous guider à travers le paysage entrepreneurial ivoirien, mais c\'est également bénéficier de nombreux avantages directs. En effet, en adhérant vous pourrez profiter de notre large réseau de contacts pour renforcer votre activité à travers les différents rendez-vous d\'affaires ou évènements que nous organisons tout au long de l\'année.',
+                    buttonText: 'Devenir membre',
+                    buttonLink: 'formulaire-membre'
                 },
             ]
         }

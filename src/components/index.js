@@ -7,6 +7,7 @@ import { HomePresidentSection } from "./HomePresidentSection";
 import { HomeTeamDetailSection } from "./HomeTeamDetailSection";
 import { HomeTeamListSection } from "./HomeTeamListSection";
 import { MainMenu } from "./MainMenu";
+import { MemberAboutSection } from "./MemberAboutSection";
 import { PemAboutSection } from "./PemAboutSection";
 import { PemFeatureSection } from "./PemFeatureSection";
 import { ServiceSection } from "./ServiceSection";
@@ -25,5 +26,6 @@ export const Components = {
     HomeTeamListSection,
     ServiceSection,
     PemAboutSection,
-    PemFeatureSection
+    PemFeatureSection,
+    MemberAboutSection,
 }

@@ -11,7 +11,7 @@ export function ServiceSection({data}) {
                 <ul className="row align-content-stretch list-unstyled flex-wrap">
                     {data.serviceList.map((serviceItem, index) => {
                          return (
-                            <li className="col-6 col-lg-4 mb-3" key={index}>
+                            <li className="col-12 col-md-6 col-lg-4 mb-3" key={index}>
                                 <div className="card h-100">
                                     <div className="card-body">
                                         <h1 className="font-weight-light">{serviceItem.number}</h1>

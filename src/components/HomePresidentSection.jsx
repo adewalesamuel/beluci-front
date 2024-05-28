@@ -3,7 +3,7 @@ export function HomePresidentSection({data}) {
         <section className="mt-5 bg-light py-5" id={data.name}>
             <div className="container position-relative">
                 <div className="bg-primary p-4 text-white text-content 
-                position-relative col-12 col-md-8">
+                position-relative col-12 col-lg-8">
                     <h1 className="mb-3">{data.title}</h1>
                     <p>{data.description}</p>
                     <div className="mt-4">
@@ -11,7 +11,8 @@ export function HomePresidentSection({data}) {
                         <p>{data.authorJob}</p>
                     </div>
                 </div>
-                <div className="position-absolute" id="presidentImg">
+                <div className="position-absolute text-center mt-4 mt-lg-0" 
+                id="presidentImg">
                     <img src={data.authorImgUrl} className="img-fluid" width={303} 
                     height={487} loading="lazy"/>
                 </div>
