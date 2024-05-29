@@ -25,13 +25,13 @@ export const MockData = {
             'type': 'link'
         },
         {
-            'name': 'nous contacter',
-            'slug': 'nous-contacter',
+            'name': 'contact',
+            'slug': 'contact',
             'type': 'link'
         },
         {
             'name': 'adhérez à la beluci',
-            'slug': 'adherez-a-la-beluci',
+            'slug': 'devenir-membre',
             'type': 'button'
         }
     ],
@@ -71,6 +71,11 @@ export const MockData = {
                     title: 'Présentation du conseil d\'administration',
                     teamMemberList: [
                         {
+                            name: 'Michael Eeckout',
+                            job: 'Administrateur',
+                            linkedinUrl: '',
+                        },
+                        {
                             name: 'Pierre DECLERCK',
                             job: 'Président',
                             linkedinUrl: '',
@@ -108,16 +113,6 @@ export const MockData = {
                         {
                             name: 'Mme Nadine GELBGRAS',
                             job: 'Administratrice',
-                            linkedinUrl: ''
-                        },
-                        {
-                            name: 'M. Morgan HANIN',
-                            job: 'Administrateur',
-                            linkedinUrl: ''
-                        },
-                        {
-                            name: 'Mme Monica MOLLON',
-                            job: 'Administrateur',
                             linkedinUrl: ''
                         },
                         {

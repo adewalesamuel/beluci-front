@@ -1,3 +1,4 @@
+import ScrollAnimation from 'react-animate-on-scroll';
 import { FaLinkedinIn as LinkedInIcon } from 'react-icons/fa';
 
 export function HomeTeamListSection({data}) {
@@ -15,16 +16,19 @@ export function HomeTeamListSection({data}) {
                {data.teamMemberList.map((teamMember, index) => {
                 return (
                     <div className="col-6 col-md-4 col-lg-3 mb-4" key={index}>
-                        <div className="border border-primary p-3 team-card-item h-100">
-                            <h5 className="mb-1">{teamMember.name}</h5>
-                            <p>{teamMember.job}</p>
-                            <div className="mt-2">
-                                <a href={teamMember.linkedinUrl} className="text-decoration-none">
-                                    <LinkedInIcon className="rounded p-2 bg-primary 
-                                    text-white icon" size={35}/>
-                                </a>
+                        <ScrollAnimation animateIn='fadeInUp' delay={100 * (index + 1)} 
+                        animateOnce={true} key={index} className='h-100'>
+                            <div className="border border-primary p-3 team-card-item h-100">
+                                <h5 className="mb-1">{teamMember.name}</h5>
+                                <p>{teamMember.job}</p>
+                                <div className="mt-2">
+                                    <a href={teamMember.linkedinUrl} className="text-decoration-none">
+                                        <LinkedInIcon className="rounded p-2 bg-primary 
+                                        text-white icon" size={35}/>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </ScrollAnimation>
                     </div>
                 )
                })} 

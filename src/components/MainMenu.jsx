@@ -30,8 +30,8 @@ export function MainMenu({data}) {
                                 return (
                                     <Link key={index} className="btn rounded-pill 
                                     text-primary border btn-outilne-primary border-primary 
-                                    text-uppercase px-4 ml-4">
-                                        Adhérez à beluci
+                                    text-uppercase px-4 ml-4" to={menuItem.slug}>
+                                        {menuItem.name}
                                     </Link>
                                 )
                             } else {
@@ -55,7 +55,7 @@ export function MainMenu({data}) {
                     }))}
                     
                 </nav>
-                <Link to={'/devenir-membre'} className="btn btn-link text-primary 
+                <Link to={'/membres'} className="btn btn-link text-primary 
                 text-decoration-none d-none d-lg-inline-block">
                     <UserGroupIcon className="text-primary" size={25}/> Membres
                 </Link>
