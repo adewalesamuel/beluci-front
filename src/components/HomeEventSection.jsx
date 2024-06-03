@@ -1,5 +1,6 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
+import { TbCalendar as CalendarIcon } from "react-icons/tb";
 
 export function HomeEventSection({data}) {
     return (
@@ -27,8 +28,18 @@ export function HomeEventSection({data}) {
                                 <p className="text-uppercase">
                                     {event.title}
                                 </p>
+                                <div className="my-2 d-flex align-items-center">
+                                    <div className="bg-white text-primary d-flex align-items-center p-1 mr-2">
+                                        <CalendarIcon size={18} /> 
+                                        {new Date(event.date).toLocaleDateString()}
+                                    </div>
+                                    <form className="d-flex">
+                                        <input type="text" placeholder="Saisir une date" className="flex-fill bg-dark form-control border-dark" />
+                                        <button className="btn btn-secondary">Valider</button>
+                                    </form>
+                                </div>
                                 <Link to={data.buttonLink} className='btn bg-white text-primary 
-                                rounded-pill px-3 mt-3'>
+                                rounded-pill px-3 mt-3 scale'>
                                     <small>Voir tous nos évènements</small>
                                 </Link>
                             </div>

@@ -54,6 +54,7 @@ export const MockData = {
                         {
                             image_url: heroBg,
                             title: 'Cocktail de networking spécial mission éconimique belge',
+                            date: '2024-12-05',
                             description: '',
                         }
                     ]
@@ -73,17 +74,12 @@ export const MockData = {
                         {
                             name: 'Michael Eeckout',
                             job: 'Administrateur',
-                            linkedinUrl: '',
+                            linkedinUrl: 'link',
                         },
                         {
                             name: 'Pierre DECLERCK',
                             job: 'Président',
-                            linkedinUrl: '',
-                        },
-                        {
-                            name: 'S. E.Mme Carole van EYLL',
-                            job: 'Órósirerte Fonneur',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link',
                         },
                         {
                             name: 'M. Maximilien LEMAIRE',
@@ -91,9 +87,9 @@ export const MockData = {
                             linkedinUrl: ''
                         },
                         {
-                            name: 'Monsieur Lionel GREBAN',
-                            job: 'Vice-Président',
-                            linkedinUrl: ''
+                            name: 'S. E.Mme Carole van EYLL',
+                            job: 'Órósirerte Fonneur',
+                            linkedinUrl: 'link'
                         },
                         {
                             name: 'M. Jean-Philippe DIEUDONNE',
@@ -101,39 +97,44 @@ export const MockData = {
                             linkedinUrl: ''
                         },
                         {
+                            name: 'Monsieur Lionel GREBAN',
+                            job: 'Vice-Président',
+                            linkedinUrl: 'likn'
+                        },
+                        {
                             name: 'Jean-François ALBRECHT',
                             job: 'Trésorier',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link'
                         },
                         {
                             name: 'M. Antonioni BASSIT',
                             job: 'Administrateur',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link'
                         },
                         {
                             name: 'Mme Nadine GELBGRAS',
                             job: 'Administratrice',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link'
                         },
                         {
                             name: 'M. Vincent PIERARD',
                             job: 'Administrateur',
-                            linkedinUrl: ''
-                        },
-                        {
-                            name: 'Mme Valentine GEURTS AKPESS',
-                            job: 'Presidente honoraire',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link'
                         },
                         {
                             name: 'Mme Hilde LAMBILOTTE',
                             job: 'Présidente honoraire',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link'
+                        },
+                        {
+                            name: 'Mme Valentine GEURTS AKPESS',
+                            job: 'Presidente honoraire',
+                            linkedinUrl: '  '
                         },
                         {
                             name: 'M. Karim RAJAN',
                             job: 'Président honoraire',
-                            linkedinUrl: ''
+                            linkedinUrl: 'link'
                         },
                     ]
                 },
@@ -174,32 +175,32 @@ export const MockData = {
                         {
                             number: '01',
                             title: 'Propositions d\'affaires',
-                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                            description: 'Vous êtes à la recherche de contacts commerciaux d\'entreprises ivoiriennes ou belges ? La BELUCI dispose de fichiers d\'entreprises. d\'annuaires professionnels et de banques de données sectorielles',
                         },
                         {
                             number: '02',
                             title: 'Networking',
-                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                            description: 'Nous organisons des évènements qui ontpour but d\'agrancir votre reseau professionnel afin d\'encourager la formation de partenariats',
                         },
                         {
                             number: '03',
                             title: 'Accès continu',
-                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                            description: 'Grace a notre application communautaire voUs bouvez rester en contact avec nos membres et promouvoir vos Services.',
                         },
                         {
                             number: '04',
                             title: 'Informations & communications',
-                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                            description: 'Nous restons a lecoute des dernieres actualités nationales pour que vous soyez les premiers informés lors d\'une nouvelle importante',
                         },
                         {
                             number: '05',
                             title: 'Conseil & Acompagnement',
-                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                            description: 'Nous offrons les ressources nécessaires pour conseiller les entreprises étrangères sur les opportunités commerciales qui s\'ottrent a elles en cote d\'ivoire.',
                         },
                         {
                             number: '06',
                             title: 'Formations',
-                            description: 'La BELUCI est un véritable facilitateur pour s\'ouvrir',
+                            description: 'Nous vous proposons des formations dans divers domaines tels que des formations de gestion de ressources humaines, de comptabilité, de transformation digitale.',
                         }
                     ]
                 },
@@ -215,7 +216,9 @@ export const MockData = {
                 {
                     name: 'pemAbout',
                     title: 'A propos du projet :',
-                    description: 'Depuis novembre 2023, la BELUCI s\'est engagée en tant que partenaire dans le Projet de Mobilité des Entrepreneurs, le PEM N\'ZASSA, une initiative visant à établir des partenariats fructueux entre les entreprises ivoiriennes, belges et luxembourgeoises. En tant que Chambre de commerce, notre mission consiste à promouvoir le développement économique et les échanges commerciaux entre ces différents pays. Notre participation à PEM N\'ZASSA s\'inscrit parfaitement dans cette mission. Ce projet, financé par l\'Union Européenne et mis en œuvre par Enabel, l\'Agence belge de développement, offre une opportunité exceptionnelle de concrétiser notre engagement envers nos membres et partenaires. Nous mobilisons notre expertise et notre réseau pour soutenir les entreprises belges et luxembourgeoises dans leur expansion en Côte d\'Ivoire, tout en apportant un soutien actif aux entreprises déjà présentes sur ce marché dynamique. De plus, nous accompagnons également les entreprises ivoiriennes qui souhaitent établir des collaborations avec des entreprises belges ou européennes.En tant que partenaire privilégié, nous avons la capacité à faciliter les échanges commerciaux, à créer des synergies et opportunités concrètes et à instaurer un environnement propice au développement des affaires pour toutes les parties prenantes',
+                    description: `Depuis novembre 2023, la BELUCI s'est engagée en tant que partenaire dans le Projet de Mobilité des Entrepreneurs, le PEM N'ZASSA, une initiative visant à établir des partenariats fructueux entre les entreprises ivoiriennes, belges et luxembourgeoises. En tant que Chambre de commerce, notre mission consiste à promouvoir le développement économique et les échanges commerciaux entre ces différents pays. 
+Notre participation à PEM N'ZASSA s'inscrit parfaitement dans cette mission. Ce projet, financé par l'Union Européenne et mis en œuvre par Enabel, l'Agence belge de développement, offre une opportunité exceptionnelle de concrétiser notre engagement envers nos membres et partenaires. Nous mobilisons notre expertise et notre réseau pour soutenir les entreprises belges et luxembourgeoises dans leur expansion en Côte d'Ivoire, tout en apportant un soutien actif aux entreprises déjà présentes sur ce marché dynamique. 
+De plus, nous accompagnons également les entreprises ivoiriennes qui souhaitent établir des collaborations avec des entreprises belges ou européennes.En tant que partenaire privilégié, nous avons la capacité à faciliter les échanges commerciaux, à créer des synergies et opportunités concrètes et à instaurer un environnement propice au développement des affaires pour toutes les parties prenantes`,
                     backgroundImgUrl: presidentImg
                 },
                 {

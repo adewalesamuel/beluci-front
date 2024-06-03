@@ -6,7 +6,7 @@ export function HomePresidentSection({data}) {
             <div className="container position-relative">
                 <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
                     <div className="bg-primary p-4 text-white text-content 
-                    position-relative col-12 col-lg-8">
+                    position-relative col-12 col-lg-7">
                         <h1 className="mb-3">{data.title}</h1>
                         <p>{data.description}</p>
                         <div className="mt-4">

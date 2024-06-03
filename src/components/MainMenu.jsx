@@ -21,7 +21,7 @@ export function MainMenu({data}) {
                         if (menuItem.slug === 'accueil') {
                             return (
                                 <Link key={index} to={'/'} className="py-1 px-2 border 
-                                border-primary rounded-pill mr-3"> 
+                                border-primary rounded-pill mr-3" id="homeIcon"> 
                                     <HomeIcon className="text-primary"/>
                                 </Link>
                             )
@@ -30,7 +30,7 @@ export function MainMenu({data}) {
                                 return (
                                     <Link key={index} className="btn rounded-pill 
                                     text-primary border btn-outilne-primary border-primary 
-                                    text-uppercase px-4 ml-4" to={menuItem.slug}>
+                                    text-uppercase px-4 ml-4 scale" to={menuItem.slug}>
                                         {menuItem.name}
                                     </Link>
                                 )

@@ -19,14 +19,17 @@ export function HomeTeamListSection({data}) {
                         <ScrollAnimation animateIn='fadeInUp' delay={100 * (index + 1)} 
                         animateOnce={true} key={index} className='h-100'>
                             <div className="border border-primary p-3 team-card-item h-100">
-                                <h5 className="mb-1">{teamMember.name}</h5>
+                                <h6 className="mb-1">{teamMember.name}</h6>
                                 <p>{teamMember.job}</p>
-                                <div className="mt-2">
-                                    <a href={teamMember.linkedinUrl} className="text-decoration-none">
-                                        <LinkedInIcon className="rounded p-2 bg-primary 
-                                        text-white icon" size={35}/>
-                                    </a>
-                                </div>
+                                {teamMember.linkedinUrl && 
+                                    <div className="mt-2">
+                                        <a href={teamMember.linkedinUrl} className="text-decoration-none">
+                                            <LinkedInIcon className="rounded p-2 bg-primary 
+                                            text-white icon" size={35}/>
+                                        </a>
+                                    </div>
+                                }
+                                <hr className='m-0 p-0 border-primary'/>
                             </div>
                         </ScrollAnimation>
                     </div>

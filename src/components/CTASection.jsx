@@ -16,7 +16,7 @@ export function CTASection(){
                     Êtes vous prêt à profiter de nos services ?
                 </h2>
                 <Link to={'/'} className="btn bg-white text-primary px-5 py-2
-                rounded-pill text-uppercase mt-5">
+                rounded-pill text-uppercase mt-5 scale">
                     Adhérez à la Beluci
                 </Link>
             </div>

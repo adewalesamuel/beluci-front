@@ -7,7 +7,12 @@ export function PemAboutSection({data}) {
                         <h1 className="font-weight-lighter text-uppercase">
                             {data.title}
                         </h1>
-                        <p className="py-3">{data.description}</p>
+                        <p className="py-3" style={{
+                            whiteSpace: 'pre-wrap',
+                            wordBreak: 'break-word'
+                        }}>
+                            {data.description}
+                        </p>
                     </div>
                     <div className="col-12 col-lg-6" style={{
                         backgroundImage: `url('${data.backgroundImgUrl}')`,

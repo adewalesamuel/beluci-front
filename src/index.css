@@ -8,7 +8,6 @@ body {
   font-family: Poppins, -apple-system, BlinkMacSystemFont, 
   'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
   'Helvetica Neue', sans-serif;
-  color: var(--primary-color);
 }
 
 p, span {
@@ -36,17 +35,20 @@ p, span {
   padding-bottom: 6rem;
 }
 
-#mainMenu nav > a.nav-item {
-  transition: color 300ms 100ms ease;
+.title-line {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 0;
 }
 
-#mainMenu nav > a.nav-item:hover, 
-#mainMenu nav > a.nav-item:active {
-  color: white !important;
+.scale { 
+  transition: transform var(--transition-duration) ease;
 }
-#mainMenu nav > a.nav-item:hover > div, 
-#mainMenu nav > a.nav-item:active > div {
-  height: 100% !important;
+
+.scale:hover {
+  transform: scale(1.2
+  );
 }
 
 a.btn-outilne-primary {
@@ -58,20 +60,53 @@ a.btn-outilne-primary:hover, .btn-outilne-primary:active {
   background-color: var(--primary-color);
 }
 
-#heroContent {
-  margin-top: -13%;
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, 
+button.bg-primary:hover {
+  background-color: var(--primary-color) !important;
 }
 
-.title-line {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  z-index: 0;
+#mainMenu nav > a.nav-item {
+  transition: color 300ms 100ms ease;
+}
+
+#mainMenu nav a#homeIcon:hover {
+  background-color: var(--primary-color) !important;
+}
+
+#mainMenu nav a#homeIcon:hover > svg {
+  color: white !important;
+}
+
+#mainMenu nav > a.nav-item:hover, 
+#mainMenu nav > a.nav-item:active {
+  color: white !important;
+}
+#mainMenu nav > a.nav-item:hover > div, 
+#mainMenu nav > a.nav-item:active > div {
+  height: 100% !important;
+}
+
+#heroContent {
+  margin-top: -13%;
 }
 
 #presidentImg {
   top: -13%;
   right: 20px;
+}
+
+.service-card, .serive-card h1 {
+  transition: all var(--transition-duration) ease;
+}
+
+.service-card:hover {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+.service-card:hover h1 {
+  color: white !important;
+  transform: translateX(40%) !important;
 }
 
 #homePresident .text-content::after {
