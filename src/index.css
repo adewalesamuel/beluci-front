@@ -1,7 +1,7 @@
 :root {
   --primary-color: #223f65;
   --transition-duration: 300ms;
-  --tranasition-delay: 100ms;
+  --transition-delay: 100ms;
 }
 body {
   -webkit-text-size-adjust: 100%;
@@ -136,6 +136,14 @@ button.bg-primary:hover {
 
 #titleHeader h1 {
   font-size: 5rem;
+}
+
+#memberAbout a.btn {
+  transition: all var(--transition-duration) ease !important;
+} 
+
+#memberAbout a.btn:hover {
+  box-shadow: 0 0 0 10px rgba(34, 63, 101, 0.8), 0 0 0 20px rgba(34, 63, 101, 0.6);
 }
 
 @media screen and (max-width: 990px) {

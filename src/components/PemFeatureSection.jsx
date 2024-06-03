@@ -50,8 +50,10 @@ export function PemFeatureSection({data}) {
                                     <h3 className="font-weight-light mb-3">
                                         {stepItem.number}
                                     </h3>
-                                    <h6 className="text-uppercase mb-3">{stepItem.title}</h6>
-                                    <small className="mb-3 d-block">{stepItem.description}</small>
+                                    <h6 className="text-uppercase mb-3 pt-3">{stepItem.title}</h6>
+                                    <small className="mb-3 d-block font-weight-lighter">
+                                        {stepItem.description}
+                                    </small>
                                 </div>
                             </li>
                         )

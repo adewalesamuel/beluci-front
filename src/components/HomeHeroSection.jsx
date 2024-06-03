@@ -12,8 +12,8 @@ export function HomeHeroSection({data}) {
                 <div className="mx-auto px-2" id="heroContent" style={{maxWidth: '1000px'}}>
                     <div className="card">
                         <div className="card-title pt-3">
-                            <h1 className="font-weight-lighter text-uppercase 
-                            text-center px-2 px-md-5 text-primary">
+                            <h1 className="text-uppercase text-center px-2 
+                            px-md-5 text-primary" style={{fontWeight: '200'}}>
                                 {data.title}
                             </h1>
                         </div>

@@ -4,7 +4,7 @@ export function PemAboutSection({data}) {
             <div className="container card py-1 py-md-4 px-3 px-md-5">
                 <div className="row flex-wrap align-items-stretch">
                     <div className="col-12 col-lg-6 py-md-5 py-3">
-                        <h1 className="font-weight-lighter text-uppercase">
+                        <h1 className="text-uppercase" style={{fontWeight: '200'}}>
                             {data.title}
                         </h1>
                         <p className="py-3" style={{

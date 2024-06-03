@@ -4,7 +4,7 @@ export function MemberAboutSection({data}) {
     return (
         <section id={data.name} className="bg-light py-4">
             <div className='container mb-3' style={{maxWidth: '900px'}}>
-                <h1 className="font-weight-lighter text-uppercase">
+                <h1 className="text-uppercase" style={{fontWeight: '200'}}>
                     {data.title}
                 </h1>
                 <p className="mt-3">{data.description}</p>

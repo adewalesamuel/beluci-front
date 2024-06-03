@@ -1,6 +1,7 @@
 import heroBg from './assets/images/hero-bg.jpg'
 import presidentImg from './assets/images/president.jpg'
 import teamImg from './assets/images/team.jpg';
+import teamDetailImg from './assets/images/teamDetail.jpg';
 
 export const MockData = {
     menuItems: [
@@ -142,7 +143,7 @@ export const MockData = {
                     name: 'homeTeamDetail',
                     title: 'Présentation du conseil d\'administration',
                     imageLandscapeUrl: teamImg,
-                    imagePortraitUrl: presidentImg,
+                    imagePortraitUrl: teamDetailImg,
                     teamMemberList: [
                         {
                             name: 'Salomé YSEBAERT',
