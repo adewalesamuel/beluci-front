@@ -43,7 +43,23 @@ export const MockData = {
                     name: 'homeHero',
                     backgroundImgUrl: heroBg,
                     title: 'Chambre de commerce belge et luxembougeoise de côte d\'ivoire',
-                    description: `La BELUCI a pour mission, entre autres, d’accompagner les sociétés belgo-luxembourgeoises souhaitant s'implanter en Côte d'Ivoire, d'apporter un appui aux entreprises belges installées localement, de soutenir les sociétés ivoiriennes souhaitant entrer en contact et travailler avec des entreprises belgo-luxembourgeoises, de représenter ses adhérents auprès des autorités ivoiriennes mais également de défendre leurs intérêts et de créer des rendez-vous de networking pour faciliter les contacts et ce dans une ambiance agréable. Adhérer à la BELUCI c'est ainsi vous donner la possibilité d’améliorer la compétitivité de votre entreprise, développer de nouvelles opportunités d'affaires et étendre votre réseau.`,
+                    description: `La BELUCI a pour mission, entre autres, d'accompagner les sociétés belgo-luxembourgeoises souhaitant s'implanter en Côte d'Ivoire, d'apporter un appui aux entreprises belges installées localement, de soutenir les sociétés ivoiriennes souhaitant entrer en contact et travailler avec des entreprises belgo-luxembourgeoises, de représenter ses adhérents auprès des autorités ivoiriennes mais également de défendre leurs intérêts et de créer des rendez-vous de networking pour faciliter les contacts et ce dans une ambiance agreable.
+Adhérer à la BELUCI c'est ainsi vous donner la possibilité d'améliorer la compétitivité de votre entreprise, développer de nouvelles opportunités d'affaires et étendre votre réseau.
+La Chambre de commerce belge et luxembourgeoise de Côte d'ivoire est une association sans but lucratif de droit belge, juridiquement et financièrement autonome, fondée en 1985 pour favoriser les contacts entre la Belgique et la Côte d'Ivoire.
+
+Ses ressources proviennent essentiellement des contributions de ses membres et du produit de ses activités. En 2020, elle a fêté ses 35 ans d'existence en faisant peau neuve. Un changement de nom - pour mieux refléter l'inclusion des Luxembourgeois - a accompagné un changement de logo et d'image mais n'a pas modifié le dynamisme qui la caractérise depuis sa création.
+
+La doyenne des chambres de commerce est une institution connue et appréciée des Ivoiriens.
+
+Elle réunit plus de 150 membres, mélange de filiales ivoiriennes d'entreprises ayant leur siège en Belgique ou au Luxembourg, d'entreprises de droit ivoirien créées par des citoyens Belges, de belges opérant au sein d'entreprises européennes et autres, et même d'entreprises ivoiriennes ayant tout simplement des liens privilégiés avec la Belgique.
+
+Depuis peu, la BELUCI fait aussi la place aux entreprises qui sans avoir de présence juridique en Côte d'Ivoire entretiennent une relation forte avec le pays parce allis v font du commerce mil executent des mrniers les entrenrIses nelIvent desormaIs etre membres « a distance » et neanmoins heneticier des reseaUx etservices de la BELUCI.
+
+Après une période marquée par un contexte sanitaire difficile au niveau mondial, la BELUCI a pu poursuivre ses activités habituelles, entre cocktails de networking séances d'information, mises en relation, visites d'entreprises et forums internationaux.
+
+En 2022, la BELUCI a proposé un événement inédit : « le Festival ivoiro-belge ». Cette rencontre entrait dans le contexte du renforcement de l'excellente collaboration qui colore les échanges entre la Belgique et la Côte d'Ivoire. En effet, ces deux pays entretiennent, depuis 60 ans, d'excellentes relations commerciales et la BELUCI est persuadée qu'un contexte d'échange multiculturel est propice au développement et à l'enrichissement de ces relations. L'évènement a été un tel succês, qu'il est d'ores et déjà considéré comme élément phare du calendrier social abidjanais.
+
+L'année 2023 a vu la deuxième édition du FIB, qui fut un grand succès, mais également un changement de bureau et donc de nouvelles orientations. La Chambre souhaite dorénavant s'impliquer directement dans des thématiques stratégiques annoncées par la BLCCA (Belgian-Luxembourg Chambers of Commerce abroad) autour des ODD. Elle sera également le cadre d'un projet de partenariat avec ENABEL, la coopération belge en Côte d'ivoire.`,
                     buttonText: 'Lire la suite'
                 },
                 {

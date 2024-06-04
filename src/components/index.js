@@ -6,6 +6,7 @@ import { HomeHeroSection } from "./HomeHeroSection";
 import { HomePresidentSection } from "./HomePresidentSection";
 import { HomeTeamDetailSection } from "./HomeTeamDetailSection";
 import { HomeTeamListSection } from "./HomeTeamListSection";
+import { ImageOverlay } from "./ImageOverlay";
 import { MainMenu } from "./MainMenu";
 import { MemberAboutSection } from "./MemberAboutSection";
 import { PemAboutSection } from "./PemAboutSection";
@@ -28,4 +29,5 @@ export const Components = {
     PemAboutSection,
     PemFeatureSection,
     MemberAboutSection,
+    ImageOverlay,
 }
