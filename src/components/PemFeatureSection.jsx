@@ -1,3 +1,8 @@
+import euImg from '../assets/images/eu.png';
+import enabelImg from '../assets/images/enabel.png';
+import belgiumFlag from '../assets/images/belgium-flag.png';
+import ciFlag from '../assets/images/ci-flag.png';
+
 export function PemFeatureSection({data}) {
     return (
         <section className="py-5">
@@ -59,6 +64,29 @@ export function PemFeatureSection({data}) {
                         )
                     })}
                 </ul>
+                <div className="py-3 my-5 text-center">
+                    <img src={euImg} width={180} className='img-fluid mr-3'/>
+                    <img src={enabelImg} width={180} className='img-fluid'/>
+                </div>
+                <div className="mx-auto" style={{maxWidth: '700px'}}>   
+                    <div className='bg-primary text-white text-center'>
+                        Lien d&apos;inscription
+                    </div>
+                    <div className='bg-light px-4 py-3'>
+                        <small className='py-2 d-inline-block w-100'>
+                            <img src={belgiumFlag} width={20} className='mr-2'/>
+                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be'>
+                                https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be
+                            </a>
+                        </small>
+                        <small className='py-2 d-inline-block w-100'>
+                            <img src={ciFlag} width={20} className='mr-2'/>
+                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/qDkM40IM'>
+                                https://mr9tacmfl16.typeform.com/to/qDkM40IM
+                            </a>
+                        </small>
+                    </div>
+                </div>
             </div>
         </section>
     )
