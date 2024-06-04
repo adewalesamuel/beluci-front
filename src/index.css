@@ -95,8 +95,8 @@ button.bg-primary:hover {
   right: 20px;
 }
 
-.service-card, .serive-card h1 {
-  transition: all var(--transition-duration) ease;
+.service-card, .service-card h1 {
+  transition: var(--transition-duration) ease;
 }
 
 .service-card:hover {
