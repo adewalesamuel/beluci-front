@@ -13,7 +13,7 @@ export function HomeTeamListSection({data}) {
                 </h3>    
             </div>
             <div className="row flex-wrap align-content-stretch">
-               {data.teamMemberList.map((teamMember, index) => {
+               {data.item_list.map((teamMember, index) => {
                 return (
                     <div className="col-6 col-md-4 col-lg-3 mb-4" key={index}>
                         <ScrollAnimation animateIn='fadeInUp' delay={100 * (index + 1)} 
@@ -23,7 +23,7 @@ export function HomeTeamListSection({data}) {
                                 <p>{teamMember.job}</p>
                                 {teamMember.linkedinUrl && 
                                     <div className="mt-2">
-                                        <a href={teamMember.linkedinUrl} className="text-decoration-none">
+                                        <a href={teamMember.linkedinLinkl} className="text-decoration-none">
                                             <LinkedInIcon className="rounded p-2 bg-primary 
                                             text-white icon" size={35}/>
                                         </a>

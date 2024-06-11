@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { AiFillPhone as PhoneIcon} from "react-icons/ai";
 import { BsEnvelopeFill as EnvelopeIcon } from 'react-icons/bs';
 import { Components } from ".";
-import { MockData } from "../MockData";
 
 export function Header(){
     return (
@@ -35,7 +34,7 @@ export function Header(){
                 </div>
             </div>
 
-            <Components.MainMenu data={MockData.menuItems} />
+            <Components.MainMenu />
         </header>
     )
 }

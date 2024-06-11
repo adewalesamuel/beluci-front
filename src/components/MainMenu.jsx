@@ -4,8 +4,12 @@ import {
     AiFillHome as HomeIcon,
     AiOutlineUsergroupAdd as UserGroupIcon,
     AiOutlineMenu as MenuIcon } from "react-icons/ai";
+import { useContext } from "react";
+import { MainContext } from "../App";
 
 export function MainMenu({data}) {
+    const {menu_items} = useContext(MainContext);
+
     return (
         <div id="mainMenu">
             <div className="container py-0 d-flex align-items-center 
@@ -17,7 +21,7 @@ export function MainMenu({data}) {
                     </Link>
                 </div>
                 <nav className="d-lg-flex align-items-center d-none">
-                    {data.map(((menuItem, index) => {
+                    {menu_items.map(((menuItem, index) => {
                         if (menuItem.slug === 'accueil') {
                             return (
                                 <Link key={index} to={'/'} className="py-1 px-2 border 

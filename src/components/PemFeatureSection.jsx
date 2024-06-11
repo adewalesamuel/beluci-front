@@ -9,7 +9,7 @@ export function PemFeatureSection({data}) {
             <h2 className="text-center  font-weight-light">{data.title}</h2>
             <div className='container px-3 px-md-5'>
                 <ul className="list-unstyled mt-3">
-                    {data.featureList.map((featureItem, index) => {
+                    {data.item_list.map((featureItem, index) => {
                         return (
                             <li className="py-2 w-100" key={index}>
                                 <div className="d-flex align-items-stretch">
@@ -26,7 +26,7 @@ export function PemFeatureSection({data}) {
                     } )}
                 </ul>
                 <ul className="list-unstyled mt-5">
-                    {data.questionList.map((questionItem, index) => {
+                    {data.item_list.map((questionItem, index) => {
                         return (
                             <li className="py-2" key={index}>
                                 <h5 className="font-weight-light">
@@ -37,7 +37,7 @@ export function PemFeatureSection({data}) {
                     })}
                 </ul>
                 <ul className="list-unstyled mt-1">
-                    {data.ctaList.map((ctaItem, index) => {
+                    {data.item_list.map((ctaItem, index) => {
                         return (
                             <li className="py-2 ml-0 ml-md-3" key={index}>
                                 <h5 className="font-weight-light text-dark">
@@ -48,7 +48,7 @@ export function PemFeatureSection({data}) {
                     })}
                 </ul>
                 <ul className="list-unstyled mt-2 row align-items-stretch">
-                    {data.stepList.map((stepItem, index) => {
+                    {data.item_list.map((stepItem, index) => {
                         return (
                             <li className="col-12 col-lg-4 mb-2" key={index}>
                                 <div className="bg-primary text-white p-3 h-100">

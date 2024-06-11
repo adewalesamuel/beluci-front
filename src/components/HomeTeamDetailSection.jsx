@@ -6,7 +6,7 @@ export function HomeTeamDetailSection({data}) {
     return (
         <section className="bg-primary text-white p-4" id={data.name}>
             <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                <img src={data.imageLandscapeUrl} width={1920} height={600} 
+                <img src={data.landscapeImgUrl} width={1920} height={600} 
                 loading="lazy" className="w-100" 
                 style={{objectFit: 'cover', objectPosition: 'top'}}/>
             </ScrollAnimation>
@@ -21,13 +21,13 @@ export function HomeTeamDetailSection({data}) {
             <div className="d-flex flex-wrap">
                 <div className="col-12 col-md-6">
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                        <img  src={data.imagePortraitUrl} className='w-100' width={666} height={700} 
+                        <img  src={data.portraitImgUrl} className='w-100' width={666} height={700} 
                         loading="lazy" style={{objectFit: 'cover', objectPosition: 'top'}}/>
                     </ScrollAnimation>
                 </div>
                 <div className="col-12 col-md-6 pl-1 pl-lg-5">
                     <ul className="list-unstyled mt-5">
-                        {data.teamMemberList.map((teamMember, index) => {
+                        {data.item_list.map((teamMember, index) => {
                             return (
                                 <li className="py-2 mb-2 mb-md-5" key={index}>
                                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}
