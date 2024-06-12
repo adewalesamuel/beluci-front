@@ -16,7 +16,7 @@ export function HomeEventSection({data}) {
                     return (
                         <div className="row align-items-strech" key={index}>
                             <div className="col-12 col-lg-6 position-relative" style={{
-                                backgroundImage: `url(${event.image_url})`,
+                                backgroundImage: `url(${event.img_url})`,
                                 backgroudSize: 'cover',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat'

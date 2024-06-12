@@ -36,6 +36,7 @@ function App() {
                 <Layouts.MainLayout>
                     <Routes>
                         <Route path='*' element={<Views.PageView />}/>
+
                     </Routes>    
                 </Layouts.MainLayout>
             </BrowserRouter>

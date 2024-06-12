@@ -16,6 +16,8 @@ export function PageView() {
         pemAbout: Components.PemAboutSection,
         pemFeature: Components.PemFeatureSection,
         memberAbout: Components.MemberAboutSection,
+        eventAbout: Components.EventAboutSection,
+        eventList: Components.EventListSection,
     }
 
     const {pathname} = useLocation();

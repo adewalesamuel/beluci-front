@@ -1,4 +1,7 @@
 import { CTASection } from "./CTASection";
+import { EventAboutSection } from "./EventAboutSection";
+import { EventItem } from "./EventItem";
+import { EventListSection } from "./EventListSection";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { HomeEventSection } from "./HomeEventSection";
@@ -10,6 +13,7 @@ import { ImageOverlay } from "./ImageOverlay";
 import { Loader } from "./Loader";
 import { MainMenu } from "./MainMenu";
 import { MemberAboutSection } from "./MemberAboutSection";
+import { Pagination } from "./Pagination";
 import { PemAboutSection } from "./PemAboutSection";
 import { PemFeatureSection } from "./PemFeatureSection";
 import { ServiceSection } from "./ServiceSection";
@@ -34,4 +38,8 @@ export const Components = {
     ImageOverlay,
     Spinner,
     Loader,
+    EventAboutSection,
+    EventItem,
+    EventListSection,
+    Pagination
 }
