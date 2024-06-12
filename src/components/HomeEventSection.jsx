@@ -12,7 +12,7 @@ export function HomeEventSection({data}) {
                         <span className="bg-white d-inline-block p-2">{data.title}</span>
                     </h3>    
                 </div>
-                {data.events.map((event, index) => {
+                {data?.events?.map((event, index) => {
                     return (
                         <div className="row align-items-strech" key={index}>
                             <div className="col-12 col-lg-6 position-relative" style={{

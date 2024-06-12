@@ -16,7 +16,9 @@ export function Header(){
                     </small>
                     <small>
                         <a href="tel: +225 27 22  43 34 00" 
-                        className="text-white"> +225 27 22  43 34 00</a>
+                        className="text-white me-2"> +225 27 22  43 34 00</a> |
+                        <a href="tel: +225 07 07 40 96 72" 
+                        className="text-white"> +225 07 07 40 96 72</a>
                     </small>
                     <small className="ml-4 d-inline-blockc">
                         <EnvelopeIcon className="text-white" /> 

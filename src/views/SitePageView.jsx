@@ -7,7 +7,7 @@ import { Services } from "../services";
 export function PageView() {
     const SectionMap = {
         homeHero: Components.HomeHeroSection,
-        // homeEvent: Components.HomeEventSection,
+        homeEvent: Components.HomeEventSection,
         homePresident: Components.HomePresidentSection,
         homeTeamList: Components.HomeTeamListSection,
         homeTeamDetail: Components.HomeTeamDetailSection,

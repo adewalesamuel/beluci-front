@@ -27,7 +27,7 @@ export function HomeTeamDetailSection({data}) {
                 </div>
                 <div className="col-12 col-md-6 pl-1 pl-lg-5">
                     <ul className="list-unstyled mt-5">
-                        {data.item_list.map((teamMember, index) => {
+                        {data.team_detail_item_list.map((teamMember, index) => {
                             return (
                                 <li className="py-2 mb-2 mb-md-5" key={index}>
                                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}

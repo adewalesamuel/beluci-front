@@ -11,7 +11,7 @@ export function ServiceSection({data}) {
                     <p className="mt-2">{data.description}</p>
                 </div>
                 <ul className="row align-content-stretch list-unstyled flex-wrap">
-                    {data.item_list.map((serviceItem, index) => {
+                    {data.service_item_list.map((serviceItem, index) => {
                          return (
                             <li className="col-12 col-md-6 col-lg-4 mb-3" key={index}>
                                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true}

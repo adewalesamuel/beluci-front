@@ -101,20 +101,6 @@ button.bg-primary:hover {
   right: 20px;
 }
 
-.service-card, .service-card h1 {
-  transition: var(--transition-duration) ease;
-}
-
-.service-card:hover {
-  color: white !important;
-  background-color: var(--primary-color) !important;
-}
-
-.service-card:hover h1 {
-  color: white !important;
-  transform: translateX(40%) !important;
-}
-
 #homePresident .text-content::after {
   content: " ";
   position: absolute;

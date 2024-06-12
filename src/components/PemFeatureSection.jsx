@@ -1,5 +1,6 @@
 import euImg from '../assets/images/eu.png';
 import enabelImg from '../assets/images/enabel.png';
+import pemImg from '../assets/images/pem.png';
 import belgiumFlag from '../assets/images/belgium-flag.png';
 import ciFlag from '../assets/images/ci-flag.png';
 
@@ -9,7 +10,7 @@ export function PemFeatureSection({data}) {
             <h2 className="text-center  font-weight-light">{data.title}</h2>
             <div className='container px-3 px-md-5'>
                 <ul className="list-unstyled mt-3">
-                    {data.item_list.map((featureItem, index) => {
+                    {data.feature_item_list.map((featureItem, index) => {
                         return (
                             <li className="py-2 w-100" key={index}>
                                 <div className="d-flex align-items-stretch">
@@ -26,29 +27,29 @@ export function PemFeatureSection({data}) {
                     } )}
                 </ul>
                 <ul className="list-unstyled mt-5">
-                    {data.item_list.map((questionItem, index) => {
+                    {data.question_item_list.map((questionItem, index) => {
                         return (
                             <li className="py-2" key={index}>
                                 <h5 className="font-weight-light">
-                                    &rarr; {questionItem}
+                                    &rarr; {questionItem.description}
                                 </h5>
                             </li>
                         )
                     })}
                 </ul>
                 <ul className="list-unstyled mt-1">
-                    {data.item_list.map((ctaItem, index) => {
+                    {data.about_item_list.map((ctaItem, index) => {
                         return (
                             <li className="py-2 ml-0 ml-md-3" key={index}>
                                 <h5 className="font-weight-light text-dark">
-                                    {ctaItem}
+                                    {ctaItem.description}
                                 </h5>
                             </li>
                         )
                     })}
                 </ul>
                 <ul className="list-unstyled mt-2 row align-items-stretch">
-                    {data.item_list.map((stepItem, index) => {
+                    {data.step_item_list.map((stepItem, index) => {
                         return (
                             <li className="col-12 col-lg-4 mb-2" key={index}>
                                 <div className="bg-primary text-white p-3 h-100">
@@ -65,6 +66,7 @@ export function PemFeatureSection({data}) {
                     })}
                 </ul>
                 <div className="py-3 my-5 text-center">
+                    <img src={pemImg} width={180} className='img-fluid mr-3'/>
                     <img src={euImg} width={180} className='img-fluid mr-3'/>
                     <img src={enabelImg} width={180} className='img-fluid'/>
                 </div>
