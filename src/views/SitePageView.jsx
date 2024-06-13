@@ -5,6 +5,8 @@ import { Views } from ".";
 import { Services } from "../services";
 
 export function PageView() {
+    let abortController = new AbortController();
+
     const SectionMap = {
         homeHero: Components.HomeHeroSection,
         homeEvent: Components.HomeEventSection,
@@ -18,12 +20,11 @@ export function PageView() {
         memberAbout: Components.MemberAboutSection,
         eventAbout: Components.EventAboutSection,
         eventList: Components.EventListSection,
+        contactAbout: Components.ContactAboutSection,
     }
 
     const {pathname} = useLocation();
-    const pageName = pathname.replace('/', '');
-
-    const abortController = new AbortController();
+    // const pageName = pathname.replace('/', '');
 
     const [page, setPage] = useState({});
     const [isLoading, setIsLoading] = useState(true);
@@ -51,6 +52,11 @@ export function PageView() {
 
     useEffect(() => {
         init();
+
+        return () => {
+            abortController.abort();
+            abortController = new AbortController();
+        }
     }, [init]);
 
     return (

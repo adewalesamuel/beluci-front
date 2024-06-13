@@ -1,5 +1,3 @@
-import ScrollAnimation from "react-animate-on-scroll"
-
 export function EventAboutSection({data}) {
     return (
         <section className="bg-light py-2" id={data.id}>

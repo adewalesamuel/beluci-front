@@ -1,14 +1,19 @@
+import { ContactAboutSection } from "./ContactAboutSection";
 import { CTASection } from "./CTASection";
+import { ErrorMessages } from "./ErrorMessages";
 import { EventAboutSection } from "./EventAboutSection";
 import { EventItem } from "./EventItem";
 import { EventListSection } from "./EventListSection";
+import { FileInput } from "./FileInput";
 import { Footer } from "./Footer";
+import { MemberForm } from "./forms/MemberForm";
 import { Header } from "./Header";
 import { HomeEventSection } from "./HomeEventSection";
 import { HomeHeroSection } from "./HomeHeroSection";
 import { HomePresidentSection } from "./HomePresidentSection";
 import { HomeTeamDetailSection } from "./HomeTeamDetailSection";
 import { HomeTeamListSection } from "./HomeTeamListSection";
+import { ImageInput } from "./ImageInput";
 import { ImageOverlay } from "./ImageOverlay";
 import { Loader } from "./Loader";
 import { MainMenu } from "./MainMenu";
@@ -41,5 +46,10 @@ export const Components = {
     EventAboutSection,
     EventItem,
     EventListSection,
-    Pagination
+    Pagination,
+    ContactAboutSection,
+    ErrorMessages,
+    MemberForm,
+    FileInput,
+    ImageInput,
 }

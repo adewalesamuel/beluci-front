@@ -36,7 +36,7 @@ function App() {
                 <Layouts.MainLayout>
                     <Routes>
                         <Route path='*' element={<Views.PageView />}/>
-
+                        <Route path="formulaire-membre" element={<Views.MemberCreateView />} />
                     </Routes>    
                 </Layouts.MainLayout>
             </BrowserRouter>

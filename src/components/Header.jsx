@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import { AiFillPhone as PhoneIcon} from "react-icons/ai";
 import { BsEnvelopeFill as EnvelopeIcon } from 'react-icons/bs';
 import { Components } from ".";
+import { useEffect } from "react";
 
 export function Header(){
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({top: 0});
+    }, [pathname])
     return (
         <header>
             <div id="topHeader" className="bg-primary 
