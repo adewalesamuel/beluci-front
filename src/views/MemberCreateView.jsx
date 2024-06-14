@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Components } from '../components';
 import { Hooks } from '../hooks';
 import logoDark from '../assets/logo-dark.png';
+import { Utils } from '../utils';
 
 export function MemberCreateView() {
     let abortController = new AbortController();
@@ -22,9 +23,13 @@ export function MemberCreateView() {
         setErrorMessages([]);
         
         try {
-            await useMember.createMember(abortController.signal);
+            const {user, token} = await useMember.createMember(abortController.signal);
 
-            navigate('/members');
+            Utils.Auth.setUser(user);
+            Utils.Auth.setSessionToken(token);
+
+            alert('Félicitation!. Vore compte à bien été crée.');
+            navigate('/members')
         } catch (error) {
             if ('message' in error) setErrorMessages([error.message]);
             if (!('messages' in error)) return;

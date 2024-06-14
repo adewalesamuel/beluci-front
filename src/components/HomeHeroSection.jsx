@@ -24,7 +24,7 @@ export function HomeHeroSection({data}) {
                             </h1>
                         </div>
                         <div className="card-body">
-                            <p className="px-3" style={{whiteSpace: 'pre-wrap'}}>
+                            <p className="px-3 text-justify" style={{whiteSpace: 'pre-wrap'}}>
                                 {!isOpen ? data.description.substr(0,711) : data.description}
                             </p>
                             <div className="px-3">
