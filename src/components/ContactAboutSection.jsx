@@ -37,7 +37,7 @@ export function ContactAboutSection({data}) {
         }
     }
     return (
-        <section className="bg-light py-2" id={data.id}>
+        <section className="py-2" id={data.id}>
             <div className="container py-3">
                 <div className="py-2">
                     <h1 className="mb-3 text-uppercase" style={{fontWeight: '200'}}>
