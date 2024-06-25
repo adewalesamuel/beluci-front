@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Components } from ".";
 import mapImg from '../assets/images/map.png';
 import { Api } from "../services/Api";
+import { AiFillPhone as PhoneIcon} from "react-icons/ai";
+import { BsEnvelopeFill as EnvelopeIcon, BsMapFill as MapIcon } from 'react-icons/bs';
 
 export function ContactAboutSection({data}) {
     const abortController = new AbortController();
@@ -45,6 +47,36 @@ export function ContactAboutSection({data}) {
                     </h1>
                     <p className="mt-2">{data.description}</p>
                 </div>
+                <ul className="d-flex align-item-stretch m-0 p-0 list-unstyled flex-wrap">
+                    <li className="col p-3">
+                        <div className="card h-100">
+                            <div className="card-body">
+                                <PhoneIcon size={30} className="text-primary mb-3" />
+                                <h4>Téléphone</h4>
+                                <div>Fixe : +225 27 33 43 34 00</div>
+                                <div>Mobile :  +225 07 07 40 96 72 </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="col p-3">
+                        <div className="card h-100">
+                            <div className="card-body">
+                                <EnvelopeIcon size={30} className="text-primary mb-3" />
+                                <h4>Email</h4>
+                                <div>info.beluci@gmail.com</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="col p-3">
+                        <div className="card h-100">
+                            <div className="card-body">
+                                <MapIcon size={30} className="text-primary mb-3" />
+                                <h4>Addresse</h4>
+                                <div>Riviera Anono, Riviera 2, Abidjan</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
                 <div className='row mt-5 align-items-center'>
                     <div className="col-12 col-md-6 mt-3">
                         <img src={mapImg} className="img-fluid"/>
@@ -81,7 +113,7 @@ export function ContactAboutSection({data}) {
                                 </div>
                                 <div className="col-12">
                                     <div className="form-group">
-                                        <button type='submit' className='btn btn-primary btn-lg btn-blocc w-100'>
+                                        <button type='submit' className='btn btn-primary btn-lg btn-block w-100'>
                                             {isDisabled ? "Chargement..." : "Envoyer le message"}
                                         </button>
                                     </div>

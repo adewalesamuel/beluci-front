@@ -5,11 +5,13 @@ import { BsEnvelopeFill as EnvelopeIcon } from 'react-icons/bs';
 export function HomeTeamDetailSection({data}) {
     return (
         <section className="bg-primary text-white p-4" id={data.name}>
-            <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                <img src={data.landscapeImgUrl} width={1920} height={600} 
-                loading="lazy" className="w-100" 
-                style={{objectFit: 'cover', objectPosition: 'top'}}/>
-            </ScrollAnimation>
+            {data.landscapeImgUrl && 
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                    <img src={data.landscapeImgUrl} width={1920} height={600} 
+                    loading="lazy" className="w-100" 
+                    style={{objectFit: 'cover', objectPosition: 'top'}}/>
+                </ScrollAnimation>
+            }
             <div className="position-relative my-4">
                 <hr className="border-white position-absolute w-100 m-0 title-line"/>
                 <h3 className="text-center p-2 position-relative">
