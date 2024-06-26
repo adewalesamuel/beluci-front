@@ -21,6 +21,7 @@ export function PageView() {
         eventAbout: Components.EventAboutSection,
         eventList: Components.EventListSection,
         contactAbout: Components.ContactAboutSection,
+        galleryTypeList: Components.GalleryTypeListSection
     }
 
     const {pathname} = useLocation();
@@ -61,7 +62,6 @@ export function PageView() {
 
     return (
         <Components.Loader isLoading={isLoading}>
-
             {page?.section_list?.map((sectionData, index) => {
                 const SectionComponent = SectionMap[sectionData.name] ?? null;
 

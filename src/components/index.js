@@ -7,6 +7,7 @@ import { EventListSection } from "./EventListSection";
 import { FileInput } from "./FileInput";
 import { Footer } from "./Footer";
 import { MemberForm } from "./forms/MemberForm";
+import { GalleryTypeListSection } from "./GalleryTypeListSection";
 import { Header } from "./Header";
 import { HomeEventSection } from "./HomeEventSection";
 import { HomeHeroSection } from "./HomeHeroSection";
@@ -52,4 +53,5 @@ export const Components = {
     MemberForm,
     FileInput,
     ImageInput,
+    GalleryTypeListSection,
 }
