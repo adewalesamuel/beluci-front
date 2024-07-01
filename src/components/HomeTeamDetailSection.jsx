@@ -20,46 +20,37 @@ export function HomeTeamDetailSection({data}) {
                     </span>
                 </h3>    
             </div>
-            <div className="d-flex flex-wrap">
-                <div className="col-12 col-md-6">
-                    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                        <img  src={data.portraitImgUrl} className='w-100' width={666} height={700} 
-                        loading="lazy" style={{objectFit: 'cover', objectPosition: 'top'}}/>
-                    </ScrollAnimation>
-                </div>
-                <div className="col-12 col-md-6 pl-1 pl-lg-5">
-                    <ul className="list-unstyled mt-5">
-                        {data.team_detail_item_list.map((teamMember, index) => {
-                            return (
-                                <li className="py-2 mb-2 mb-md-5" key={index}>
-                                    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}
-                                    delay={100 * (index + 1)}>
-                                        <h2>{teamMember.name}</h2>
-                                        <p>{teamMember.job}</p>
-                                        {teamMember.email && 
-                                            <div className="mb-3">
-                                                <a href={`mailto:${teamMember.email}`} 
-                                                className="badga badge-pill bg-white text-primary 
-                                                text-decoration-none">
-                                                    <EnvelopeIcon /> {teamMember.email}
-                                                </a>
-                                            </div>
-                                        }
-                                        {teamMember.phoneNumber && 
-                                            <div className="mb-3">
-                                                <a href={`tel:${teamMember.phoneNumber}`} 
-                                                className="text-white text-decoration-none">
-                                                    <PhoneIcon /> {teamMember.phoneNumber}
-                                                </a>
-                                            </div>
-                                        }
-                                    </ScrollAnimation>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </div>
-            </div>
+            <ul className="list-unstyled mt-5 d-flex flex-wrap flex-row">
+                {data.team_detail_item_list.map((teamMember, index) => {
+                    return (
+                        <li className="py-2 mb-2 mb-md-5 col-lg-4 col-md-6 col-12" key={index}>
+                            <ScrollAnimation animateIn="fadeInUp" animateOnce={true}
+                            delay={100 * (index + 1)}>
+                                <img src={teamMember.imgUrl} className="img-fluid mb-3"/>
+                                <h2>{teamMember.name}</h2>
+                                <p>{teamMember.job}</p>
+                                {teamMember.email && 
+                                    <div className="mb-3">
+                                        <a href={`mailto:${teamMember.email}`} 
+                                        className="badga badge-pill bg-white text-primary 
+                                        text-decoration-none">
+                                            <EnvelopeIcon /> {teamMember.email}
+                                        </a>
+                                    </div>
+                                }
+                                {teamMember.phoneNumber && 
+                                    <div className="mb-3">
+                                        <a href={`tel:${teamMember.phoneNumber}`} 
+                                        className="text-white text-decoration-none">
+                                            <PhoneIcon /> {teamMember.phoneNumber}
+                                        </a>
+                                    </div>
+                                }
+                            </ScrollAnimation>
+                        </li>
+                    )
+                })}
+            </ul>
         </section>
     )
 }
