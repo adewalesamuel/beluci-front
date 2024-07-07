@@ -6,7 +6,7 @@ export function EventItem(props) {
         <div className="row align-items-strech">
             <div className="col-12 col-lg-6 position-relative" style={{
                 backgroundImage: `url(${props.event.img_url})`,
-                backgroudSize: 'cover',
+                backgroundSize: '100% auto',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
             }}>
@@ -16,15 +16,12 @@ export function EventItem(props) {
                 <p className="text-uppercase">
                     {props.event.name}
                 </p>
+                <small>{props.event.address}</small>
                 <div className="my-2 d-flex flex-column">
                     <div className="bg-white text-primary d-flex align-items-center p-1 mb-3">
                         <CalendarIcon size={18} /> 
                         {new Date(props.event.date).toLocaleDateString()}
                     </div>
-                    <form className="d-flex flex-wrap">
-                        <input type="text" placeholder="Saisir une date" className="flex-fill bg-dark form-control border-dark" />
-                        <button className="btn btn-secondary w-100">Valider</button>
-                    </form>
                 </div>
             </div>
         </div>

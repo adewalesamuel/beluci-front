@@ -292,7 +292,7 @@ export function MemberForm(props) {
                         handleFileChange={props.useMember.setIdcard_url}/>
                     </div>
                 </div>
-				<div className='col-12 col-md-6'>
+				{/* <div className='col-12 col-md-6'>
                     <div className='form-group'>
                         <label htmlFor='password'>{__('password')}
                             <span className='text-danger'>*</span>
@@ -302,7 +302,7 @@ export function MemberForm(props) {
                         disabled={props.isDisabled} onChange={ e => 
                             props.useMember.setPassword(e.target.value) ?? null}/>
                     </div>
-                </div>
+                </div> */}
 				{/* <div className='col-12'>
                     <div className='form-group'>
                         <label htmlFor='member_id'>{__('member_id')}</label>

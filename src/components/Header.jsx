@@ -26,7 +26,7 @@ export function Header(){
                         <a href="tel: +225 07 07 40 96 72" 
                         className="text-white"> +225 07 07 40 96 72</a>
                     </small>
-                    <small className="ml-4 d-inline-blockc">
+                    {/* <small className="ml-4 d-inline-blockc">
                         <EnvelopeIcon className="text-white" /> 
                         <span className="d-none d-md-inline"> Mail :</span> 
                     </small> 
@@ -34,7 +34,7 @@ export function Header(){
                         <a href="mailto:info@beluci.com" className="text-white">
                             info@beluci.com
                         </a>
-                    </small>
+                    </small> */}
                     </div>
                     <small className="d-none d-md-inline">
                         <Link to={'/contact'} className="text-white">Contact</Link>

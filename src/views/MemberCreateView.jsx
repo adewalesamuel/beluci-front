@@ -23,13 +23,10 @@ export function MemberCreateView() {
         setErrorMessages([]);
         
         try {
-            const {user, token} = await useMember.createMember(abortController.signal);
+            await useMember.createMember(abortController.signal);
 
-            Utils.Auth.setUser(user);
-            Utils.Auth.setSessionToken(token);
-
-            alert('Félicitation!. Vore compte à bien été crée.');
-            navigate('/members')
+            alert('Félicitation!. Votre compte a bien été créé. Nous allons vous contactez sous peu.');
+            navigate('/')
         } catch (error) {
             if ('message' in error) setErrorMessages([error.message]);
             if (!('messages' in error)) return;

@@ -67,15 +67,18 @@ export function MemberListView() {
                                     <li key={index} className='col-12 col-md-6 p-3'>
                                         <div className='card d-flex- flex-row flex-wrap align-items-start h-100'>
                                             <div className='col-4 px-0'>
-                                                <img src={member.logo_url} className='img-fluid' 
+                                                <img src={member.photo_url} className='img-fluid' 
                                                 onError={e => e.currentTarget.src=placeholderImg}/>
                                             </div>
                                             <div className='card-body col-8'>
                                                 <h5>{member.company_name}</h5>
                                                 <div className='d-flex flex-column'>
-                                                    <span className='text-muted'>{member.sector}</span>
+                                                    <span className='text-sector'>{member.sector}</span>
                                                     <address className='mb-0'>{member.address}</address>
-                                                    <span className='text-primary'>{member.phone_number}</span>
+                                                    <span>{member.email}</span>
+                                                    <span>{member.representative_fullname}</span>
+                                                    <strong className='text-primary'>{member.phone_number}</strong>
+                                                    <span>{member.other_details}</span>
                                                     <span className='text-primary badge badge-pill badge-warning mt-2'>{member.website_url}</span>
                                                 </div>
                                             </div>

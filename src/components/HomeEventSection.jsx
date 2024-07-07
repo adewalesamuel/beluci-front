@@ -17,28 +17,24 @@ export function HomeEventSection({data}) {
                         <div className="row align-items-strech" key={index}>
                             <div className="col-12 col-lg-6 position-relative" style={{
                                 backgroundImage: `url(${event.img_url})`,
-                                backgroudSize: 'cover',
+                                backgroundSize: '100% auto',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat'
                             }}>
                             </div>
                             <div className="col-12 col-lg-6 p-5 bg-primary 
                             text-white">
-                                <h3 className="text-uppercase">Nos prochains évènements</h3>
+                                <h3 className="text-uppercase">{event.name}</h3>
                                 <p className="text-uppercase">
-                                    {event.title}
+                                    {event.address}
                                 </p>
                                 <div className="my-2 d-flex align-items-center">
                                     <div className="bg-white text-primary d-flex align-items-center p-1 mr-2">
                                         <CalendarIcon size={18} /> 
                                         {new Date(event.date).toLocaleDateString()}
                                     </div>
-                                    <form className="d-flex">
-                                        <input type="text" placeholder="Saisir une date" className="flex-fill bg-dark form-control border-dark" />
-                                        <button className="btn btn-secondary">Valider</button>
-                                    </form>
                                 </div>
-                                <Link to={data.buttonLink} className='btn bg-white text-primary 
+                                <Link to={'/nos-evenements'} className='btn bg-white text-primary 
                                 rounded-pill px-3 mt-3 scale'>
                                     <small>Voir tous nos évènements</small>
                                 </Link>

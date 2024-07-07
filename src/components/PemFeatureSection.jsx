@@ -1,6 +1,5 @@
-import euImg from '../assets/images/eu.png';
+import euImg from '../assets/images/eu.jpg';
 import enabelImg from '../assets/images/enabel.png';
-import pemImg from '../assets/images/pem.png';
 import belgiumFlag from '../assets/images/belgium-flag.png';
 import ciFlag from '../assets/images/ci-flag.png';
 
@@ -9,16 +8,14 @@ export function PemFeatureSection({data}) {
         <section className="py-5">
             <h2 className="text-center  font-weight-light">{data.title}</h2>
             <div className='container px-3 px-md-5'>
-                <ul className="list-unstyled mt-3">
+                <ul className="list-unstyled mt-3 row align-items-stretch">
                     {data.feature_item_list.map((featureItem, index) => {
                         return (
-                            <li className="py-2 w-100" key={index}>
-                                <div className="d-flex align-items-stretch">
-                                    <div className="bg-primary text-white px-3 py-2">
-                                        {featureItem.number}
-                                    </div>
-                                    <div className="text-white p-2 flex-fill" 
-                                    style={{backgroundColor: '#16263b'}}>
+                            <li className="col-12 col-md-6 col-lg-3 mb-3 py-2" key={index}>
+                                <div className="h-100" style={{backgroundColor: '#16263b'}}>
+                                    <img className='img-fluid' src={featureItem.imgUrl} 
+                                    alt={featureItem.number} />
+                                    <div className="text-white p-3 flex-fill" >
                                         {featureItem.description}
                                     </div>
                                 </div>
@@ -66,7 +63,6 @@ export function PemFeatureSection({data}) {
                     })}
                 </ul>
                 <div className="py-3 my-5 text-center">
-                    <img src={pemImg} width={180} className='img-fluid mr-3'/>
                     <img src={euImg} width={180} className='img-fluid mr-3'/>
                     <img src={enabelImg} width={180} className='img-fluid'/>
                 </div>
@@ -75,18 +71,18 @@ export function PemFeatureSection({data}) {
                         Lien d&apos;inscription
                     </div>
                     <div className='bg-light px-4 py-3'>
-                        <small className='py-2 d-inline-block w-100'>
+                        <h5 className='py-2 d-inline-block w-100'>
                             <img src={belgiumFlag} width={20} className='mr-2'/>
-                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be'>
-                                https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be
+                            <a target='_blank' href=' https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be'>
+                                 Inscription pour les belges
                             </a>
-                        </small>
-                        <small className='py-2 d-inline-block w-100'>
+                        </h5>
+                        <h5 className='py-2 d-inline-block w-100'>
                             <img src={ciFlag} width={20} className='mr-2'/>
                             <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/qDkM40IM'>
-                                https://mr9tacmfl16.typeform.com/to/qDkM40IM
+                                Inscription pour les Ivoirien(ne)s
                             </a>
-                        </small>
+                        </h5>
                     </div>
                 </div>
             </div>

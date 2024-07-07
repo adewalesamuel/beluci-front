@@ -17,8 +17,11 @@ export function ServiceSection({data}) {
                                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true}
                                 delay={100 * (index + 1)} className="h-100">
                                     <div className="card h-100 service-card">
+                                        <div className="card-img">  
+                                            <img className="img-fluid" src={serviceItem.imgUrl} 
+                                            alt={serviceItem.title} loading="lazy" />
+                                        </div>
                                         <div className="card-body position-relative">
-                                            <h1 className="font-weight-light position-relative">{serviceItem.number}</h1>
                                             <h6 className="font-weight-bolder">
                                                 {serviceItem.title}
                                             </h6>

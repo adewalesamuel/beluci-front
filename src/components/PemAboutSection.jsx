@@ -1,7 +1,10 @@
+import pemImg from '../assets/images/pem.png';
+
 export function PemAboutSection({data}) {
     return (
         <section id={data.name} className="p-4 bg-light">
             <div className="container card py-1 py-md-4 px-3 px-md-5">
+                <img src={pemImg} width={180} className='img-fluid mr-3'/>
                 <div className="row flex-wrap align-items-stretch">
                     <div className="col-12 col-lg-6 py-md-5 py-3">
                         <h1 className="text-uppercase" style={{fontWeight: '200'}}>

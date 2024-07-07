@@ -20,8 +20,7 @@ export function PageView() {
         memberAbout: Components.MemberAboutSection,
         eventAbout: Components.EventAboutSection,
         eventList: Components.EventListSection,
-        contactAbout: Components.ContactAboutSection,
-        galleryTypeList: Components.GalleryTypeListSection
+        contactAbout: Components.ContactAboutSection
     }
 
     const {pathname} = useLocation();
