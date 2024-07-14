@@ -29,7 +29,7 @@ export function ContactAboutSection({data}) {
 
             alert('Félicitaion! Votre message a été envoyé.')
         } catch (error) {
-            if ('message' in error) setErrorMesseges([message]);
+            if ('message' in error) setErrorMesseges([error.message]);
             if (!('messages' in error)) return;
 
             const messages = error.messages;
