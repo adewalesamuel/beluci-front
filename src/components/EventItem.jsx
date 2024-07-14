@@ -1,5 +1,6 @@
 
 import { TbCalendar as CalendarIcon } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 export function EventItem(props) {
     return (
@@ -23,6 +24,7 @@ export function EventItem(props) {
                         {new Date(props.event.date).toLocaleDateString()}
                     </div>
                 </div>
+                <Link to={`/galleries/${props.event.id}`} className="stretched-link"></Link>
             </div>
         </div>
     )

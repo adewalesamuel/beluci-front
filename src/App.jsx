@@ -37,6 +37,7 @@ function App() {
                     <Routes>
                         <Route path='*' element={<Views.PageView />}/>
                         <Route path="formulaire-membre" element={<Views.MemberCreateView />} />
+                        <Route path="galleries/:id" element={<Views.GalleryListView />} />
                         <Route path="membres" element={<Views.PrivateView View={Views.MemberListView} />} />
                         <Route path="connexion" element={<Views.LoginView />} />
                     </Routes>    

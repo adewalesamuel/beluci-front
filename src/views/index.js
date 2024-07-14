@@ -1,4 +1,5 @@
 import { EventListView } from "./EventListView";
+import { GalleryListView } from "./GalleryListView";
 import { LoginView } from "./LoginView";
 import { MemberCreateView } from "./MemberCreateView";
 import { MemberListView } from "./MemberListView";
@@ -13,5 +14,6 @@ export const Views = {
     MemberCreateView,
     PrivateView,
     MemberListView,
-    LoginView
+    LoginView,
+    GalleryListView,
 }
