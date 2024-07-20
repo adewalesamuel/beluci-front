@@ -96,11 +96,6 @@ button.bg-primary:hover {
   margin-top: -13%;
 }
 
-#presidentImg {
-  top: -13%;
-  right: 20px;
-}
-
 #homePresident .text-content::after {
   content: " ";
   position: absolute;

@@ -7,7 +7,7 @@ import {
 import { useContext } from "react";
 import { MainContext } from "../App";
 
-export function MainMenu({data}) {
+export function MainMenu() {
     const {menu_items} = useContext(MainContext);
 
     return (
@@ -59,7 +59,7 @@ export function MainMenu({data}) {
                     }))}
                     
                 </nav>
-                <Link to={'/membres'} className="btn btn-link text-primary 
+                <Link to={'/membre'} className="btn btn-link text-primary 
                 text-decoration-none d-none d-lg-inline-block">
                     <UserGroupIcon className="text-primary" size={25}/> Membres
                 </Link>

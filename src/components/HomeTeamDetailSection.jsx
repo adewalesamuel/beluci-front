@@ -20,7 +20,7 @@ export function HomeTeamDetailSection({data}) {
                     </span>
                 </h3>    
             </div>
-            <ul className="list-unstyled mt-5 d-flex flex-wrap flex-row">
+            <ul className="list-unstyled mt-5 d-flex flex-wrap flex-row justify-content-around">
                 {data.team_detail_item_list.map((teamMember, index) => {
                     return (
                         <li className="py-2 mb-2 mb-md-5 col-lg-4 col-md-6 col-12" key={index}>
