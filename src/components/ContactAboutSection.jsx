@@ -23,11 +23,13 @@ export function ContactAboutSection({data}) {
         try {
             const payload = {email, message, fullname};
 
-            await Api.post('/contact', 
-                JSON.stringify(payload), abortController.signal)
-            .then(response => response.json());
+            await Api.post('/contact', JSON.stringify(payload), abortController.signal);
 
             alert('Félicitaion! Votre message a été envoyé.')
+
+            setEmail('');
+            setMessage('');
+            setFullname('');
         } catch (error) {
             if ('message' in error) setErrorMesseges([error.message]);
             if (!('messages' in error)) return;
