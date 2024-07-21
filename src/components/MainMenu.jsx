@@ -60,7 +60,7 @@ export function MainMenu() {
                     
                 </nav>
                 <Link to={'/membre'} className="btn btn-link text-primary 
-                text-decoration-none d-none d-lg-inline-block">
+                text-decoration-none d-none d-lg-inline-block" target="_blank">
                     <UserGroupIcon className="text-primary" size={25}/> Membres
                 </Link>
                 <button className="d-inline-block d-lg-none btn"><MenuIcon size={25} /></button>
