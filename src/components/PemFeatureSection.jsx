@@ -79,7 +79,7 @@ export function PemFeatureSection({data}) {
                         </h5>
                         <h5 className='py-2 d-inline-block w-100'>
                             <img src={ciFlag} width={20} className='mr-2'/>
-                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/qDkM40IM'>
+                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/qDkM40lM'>
                                 Inscription pour les Ivoirien(ne)s
                             </a>
                         </h5>
