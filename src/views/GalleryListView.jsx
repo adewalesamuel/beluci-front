@@ -57,7 +57,10 @@ export function GalleryListView() {
 
             <section className="py-4">
                 <div className="container">
-                <ul className='list-unstyled d-flex align-items-stretch flex-wrap'>
+                    <div className='col-12 col-md-6'>
+                        <p>{useEvent.description}</p>
+                    </div>
+                    <ul className='list-unstyled d-flex align-items-stretch flex-wrap'>
                         {gallerys.map((gallery, index) => {
                             return (
                                 <li className="p-2 col-12 col-md-6 col-xl-4" key={index}>
