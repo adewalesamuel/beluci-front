@@ -68,19 +68,27 @@ export function PemFeatureSection({data}) {
                 </div>
                 <div className="mx-auto" style={{maxWidth: '700px'}}>   
                     <div className='bg-primary text-white text-center'>
-                        Lien d&apos;inscription
+                        Formulaire d&#39;inscription aux projets
                     </div>
                     <div className='bg-light px-4 py-3'>
                         <h5 className='py-2 d-inline-block w-100'>
                             <img src={belgiumFlag} width={20} className='mr-2'/>
-                            <a target='_blank' href=' https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be'>
-                                 Inscription pour les belges
+                            Formulaire d&#39;inscription pour les entreprises belges : <br />
+                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be'>
+                                https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be
                             </a>
                         </h5>
                         <h5 className='py-2 d-inline-block w-100'>
                             <img src={ciFlag} width={20} className='mr-2'/>
+                            Formulaire d&#39;inscription pour les entreprises ivoirien(n)es : <br />
                             <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/qDkM40lM'>
-                                Inscription pour les Ivoirien(ne)s
+                                https://mr9tacmfl16.typeform.com/to/qDkM40lM
+                            </a>
+                        </h5>
+                        <h5 className='py-2 d-inline-block w-100'>
+                            Le site internet d’Enabel : <br />
+                            <a target='_blank' href='https://stories.enabel.be/pem-entrepreneuriat/index.html'>
+                                https://stories.enabel.be/pem-entrepreneuriat/index.html
                             </a>
                         </h5>
                     </div>
