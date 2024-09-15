@@ -18,8 +18,8 @@ function App() {
 
     const init = useCallback(async () => {
         try {
-            const {menu_items} = await Services.MenuItemService.getAll
-            ({}, abortController.signal);
+            const {menu_items} = await Services.MenuItemService.getAll(
+                {}, abortController.signal);
 
             setMenu_items(menu_items);
         } catch (error) {
