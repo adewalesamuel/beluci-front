@@ -21,13 +21,19 @@ export function MemberCreateView() {
         e.preventDefault();
         useMember.setIsDisabled(true);
         setErrorMessages([]);
+
         
         try {
+            if (!useMember.hasAcceptedConditions) 
+                throw new Error('Vous devez accepter les conditions générales d\'utilisation !');
+            
             await useMember.createMember(abortController.signal);
 
             alert('Félicitation!. Votre compte a bien été créé. Nous allons vous contactez sous peu.');
             navigate('/')
         } catch (error) {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+            console.log(error.message);
             if ('message' in error) setErrorMessages([error.message]);
             if (!('messages' in error)) return;
 

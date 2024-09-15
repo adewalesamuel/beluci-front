@@ -1,9 +1,24 @@
 //'use client'
+import { useState } from 'react';
 import { Components } from '..';
 import { Utils } from '../../utils';
 
 export function MemberForm(props) {
     const {__} = Utils.String;
+
+    const [isOtherSource, setIsOtherSource] = useState(false);
+
+    const handleMemberSourceChange = e => {
+        e.preventDefault();
+
+        if (e.target.value === 'Autres') {
+            setIsOtherSource(true);
+        } else {
+            setIsOtherSource(false);
+            props.useMember.setMember_source(e.target.value);
+        }
+
+    }
 
     return (
         <form onSubmit={props.handleFormSubmit ?? null}>
@@ -197,17 +212,6 @@ export function MemberForm(props) {
                 </div>
 				<div className='col-12 col-md-6'>
                     <div className='form-group'>
-                        <label htmlFor='email'>{__('email')}
-                            <span className='text-danger'>*</span>
-                        </label>
-                        <input className='form-control' type='text' id='email' name='email' 
-                        placeholder={__('email')} value={props.useMember.email ?? ''}
-                        disabled={props.isDisabled} onChange={ e => 
-                            props.useMember.setEmail(e.target.value) ?? null}/>
-                    </div>
-                </div>
-				<div className='col-12 col-md-6'>
-                    <div className='form-group'>
                         <label htmlFor='phone_number'>{__('phone_number')}
                             <span className='text-danger'>*</span>
                         </label>
@@ -215,6 +219,17 @@ export function MemberForm(props) {
                         placeholder={__('phone_number')} value={props.useMember.phone_number ?? ''}
                         disabled={props.isDisabled} onChange={ e => 
                             props.useMember.setPhone_number(e.target.value) ?? null}/>
+                    </div>
+                </div>
+                <div className='col-12 col-md-6'>
+                    <div className='form-group'>
+                        <label htmlFor='email'>{__('email')}
+                            <span className='text-danger'>*</span>
+                        </label>
+                        <input className='form-control' type='text' id='email' name='email' 
+                        placeholder={__('email')} value={props.useMember.email ?? ''}
+                        disabled={props.isDisabled} onChange={ e => 
+                            props.useMember.setEmail(e.target.value) ?? null}/>
                     </div>
                 </div>
 				<div className='col-12 col-md-6'>
@@ -266,16 +281,21 @@ export function MemberForm(props) {
                 </div>
 				<div className='col-12 col-md-6'>
                     <div className='form-group'>
-                        <label htmlFor='cover_letter_url'>{__('cover_letter_url')}</label>
-                        <Components.FileInput img_url={props.useMember.cover_letter_url ?? ''}
-                        handleFileChange={props.useMember.setCover_letter_url}/>
+                        <label htmlFor='sales_representative_nationality'>{__('sales_representative_nationality')}
+                            <span className='text-danger'>*</span>
+                        </label>
+                        <input className='form-control' type='text' id='sales_representative_nationality' 
+                        name='sales_representative_nationality' placeholder={__('sales_representative_nationality')} 
+                        value={props.useMember.sales_representative_nationality ?? ''}
+                        disabled={props.isDisabled} onChange={ e => 
+                            props.useMember.setSales_representative_nationality(e.target.value) ?? null}/>
                     </div>
                 </div>
 				<div className='col-12 col-md-6'>
                     <div className='form-group'>
-                        <label htmlFor='photo_url'>{__('photo_url')}</label>
-                        <Components.ImageInput img_url={props.useMember.photo_url ?? ''}
-                        handleImageChange={props.useMember.setPhoto_url}/>
+                        <label htmlFor='cover_letter_url'>{__('cover_letter_url')}</label>
+                        <Components.FileInput img_url={props.useMember.cover_letter_url ?? ''}
+                        handleFileChange={props.useMember.setCover_letter_url}/>
                     </div>
                 </div>
 				<div className='col-12 col-md-6'>
@@ -285,13 +305,13 @@ export function MemberForm(props) {
                         handleFileChange={props.useMember.setCommercial_register_url}/>
                     </div>
                 </div>
-				<div className='col-12 col-md-6'>
+				{/* <div className='col-12 col-md-6'>
                     <div className='form-group'>
                         <label htmlFor='idcard_url'>{__('idcard_url')}</label>
                         <Components.FileInput img_url={props.useMember.commercial_register_url ?? ''}
                         handleFileChange={props.useMember.setIdcard_url}/>
                     </div>
-                </div>
+                </div> */}
 				{/* <div className='col-12 col-md-6'>
                     <div className='form-group'>
                         <label htmlFor='password'>{__('password')}
@@ -303,24 +323,44 @@ export function MemberForm(props) {
                             props.useMember.setPassword(e.target.value) ?? null}/>
                     </div>
                 </div> */}
-				{/* <div className='col-12'>
+				<div className='col-12 col-md-6'>
                     <div className='form-group'>
-                        <label htmlFor='member_id'>{__('member_id')}</label>
-                        <select className='select2 form-control' id='member_id' name='member_id' 
-                        value={props.useMember.member_id ?? ''} disabled={props.isDisabled} 
-                        onChange={ e => props.useMember.setMember_id(e.target.value) ?? null}>
+                        <label htmlFor='member_source'>{__('member_source')}</label>
+                        <select className='select2 form-control' id='member_source' name='member_source' 
+                        value={props.useMember.member_source ?? ''} disabled={props.isDisabled} 
+                        onChange={handleMemberSourceChange}>
                             <option hidden>Choisissez une option</option>
-                            {
-                                props.members.map((member, index) => {
-                                    return (<option key={index} value={member.id ?? ''}>
-                                                {member.name}
-                                            </option>)
-                                })
-                            }
+                            <option value={'Par un membre de la BELUCI'}>Par un membre de la BELUCI</option>
+                            <option value={'Via les réseaux sociaux'}>Via les réseaux sociaux</option>
+                            <option value={'Lors d\'un événement organisé par la'}>Lors d&apos;un événement organisé par la</option>
+                            <option value={'Par des recommandations d\'affaires'}>Par des recommandations d&apos;affaires</option>
+                            <option value={'Autres'}>Autres</option>
                         </select>
+
+                        {isOtherSource && 
+                            <input className="form-control mt-2" name="member_source_other"
+                            onChange={e => props.useMember.setMember_source(e.target.value)} placeholder={__('member_source')}/>
+                        }
                     </div>
-                </div> */}
-				
+                </div>
+                <div className='col-12 col-md-6'>
+                    <div className='form-group'>
+                        <label htmlFor='photo_url'>{__('photo_url')}</label>
+                        <Components.ImageInput img_url={props.useMember.photo_url ?? ''}
+                        handleImageChange={props.useMember.setPhoto_url}/>
+                    </div>
+                </div>
+                <div className='col-12'>
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" 
+                        checked={props.useMember.hasAcceptedConditions} onChange={() => 
+                        props.useMember.setHasAcceptedConditions(!props.useMember.hasAcceptedConditions)}/>
+                        <label className="form-check-label" htmlFor="flexCheckChecked">
+                            J&apos;accepte que mes informations soient partagées avec les autres membres de
+                            la Chambre de Commerce belgo-luxembourgeoise de Côte d&apos;Ivoire.
+                        </label>
+                    </div>
+                </div>
                 <div className='col-12 text-right mt-2'>
                     <button disabled={props.isDisabled ?? false} type='submit' 
                     className='btn btn-primary'>

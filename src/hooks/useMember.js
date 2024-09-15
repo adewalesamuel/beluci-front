@@ -32,7 +32,11 @@ export const useMember = () => {
 	const [idcard_url, setIdcard_url] = useState('');
 	const [password, setPassword] = useState('');
 	const [member_id, setMember_id] = useState('');
-	
+	const [member_source, setMember_source] = useState('');
+	const [sales_representative_nationality, setSales_representative_nationality] = useState('');
+
+	const [hasAcceptedConditions, setHasAcceptedConditions] = useState(false);
+
     const [errors, setErrors] = useState([]);
     const [isDisabled, setIsDisabled] = useState(false);
 
@@ -77,6 +81,8 @@ export const useMember = () => {
 		idcard_url,
 		password,
 		member_id,
+		member_source,
+		sales_representative_nationality
 		
         };
 
@@ -114,6 +120,8 @@ export const useMember = () => {
 		idcard_url,
 		password,
 		member_id,
+		member_source,
+		sales_representative_nationality
 		
         };
 
@@ -154,6 +162,8 @@ export const useMember = () => {
 		setIdcard_url(member.idcard_url ?? '');
 		setPassword(member.password ?? '');
 		setMember_id(member.member_id ?? '');
+		setMember_source(member.member_source ?? '');
+		setSales_representative_nationality(member.sales_representative_nationality ?? '');
 		
     }
     const emptyMember = () => {
@@ -187,6 +197,8 @@ export const useMember = () => {
 		setIdcard_url('');
 		setPassword('');
 		setMember_id('');
+		setMember_source('');
+		setSales_representative_nationality('');
 		
     }
 
@@ -221,6 +233,9 @@ export const useMember = () => {
 		idcard_url,
 		password,
 		member_id,
+		member_source,
+		sales_representative_nationality,
+		hasAcceptedConditions,
 		
         errors,
         isDisabled,
@@ -253,6 +268,9 @@ export const useMember = () => {
 		setIdcard_url,
 		setPassword,
 		setMember_id,
+		setMember_source,
+		setSales_representative_nationality,
+		setHasAcceptedConditions,
 		
         setId,
         setErrors,
