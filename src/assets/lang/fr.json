@@ -51,7 +51,7 @@
     "employee_number": "Nombre d'employés",
     "legal_status": "Statut juridique",
     "share_capital": "Capital",
-    "sector": "Secteur d’activités",
+    "sector": "Secteur d’activité",
     "other_details": "Services proposés par l'entreprise",
     "company_category": "Catégorie d'entreprise",
     "representative_fullname": "Nom complet du représentant",
@@ -71,5 +71,6 @@
     "content": "Contenu",
     "excerpt": "Extrait",
     "author": "Auteur",
-    "member_source": "Comment avez-vous connu la BELUCI ?"
+    "member_source": "Comment avez-vous connu la BELUCI ?",
+    "parent_company": "Maison mère/Groupe"
 }

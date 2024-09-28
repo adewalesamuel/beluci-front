@@ -29,7 +29,7 @@ export function MemberCreateView() {
             
             await useMember.createMember(abortController.signal);
 
-            alert('Félicitation!. Votre compte a bien été créé. Nous allons vous contactez sous peu.');
+            alert('Félicitation!. Votre compte a bien été créé. Nous allons vous contacter sous peu.');
             navigate('/')
         } catch (error) {
             window.scrollTo({top: 0, behavior: 'smooth'});

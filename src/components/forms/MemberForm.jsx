@@ -152,6 +152,17 @@ export function MemberForm(props) {
                 </div>
 				<div className='col-12 col-md-6'>
                     <div className='form-group'>
+                        <label htmlFor='parent_company'>{__('parent_company')}
+                            <span className='text-danger'>*</span>
+                        </label>
+                        <input className='form-control' type='text' id='parent_company' name='parent_company' 
+                        placeholder={__('parent_company')} value={props.useMember.sector ?? ''}
+                        disabled={props.isDisabled} onChange={ e => 
+                            props.useMember.setParent_company(e.target.value) ?? null}/>
+                    </div>
+                </div>
+				<div className='col-12 col-md-6'>
+                    <div className='form-group'>
                         <label htmlFor='other_details'>{__('other_details')}
                             <span className='text-danger'>*</span>
                         </label>

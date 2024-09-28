@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { Components } from ".";
 
 export function HomeHeroSection({data}) {
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
         <section id={data.name} className="d-flex flex-column">
             <div className="w-100 position-relative">
@@ -25,14 +22,9 @@ export function HomeHeroSection({data}) {
                         </div>
                         <div className="card-body">
                             <p className="px-3 text-justify" style={{whiteSpace: 'pre-wrap'}}>
-                                {!isOpen ? data.description.substr(0,711) : data.description}
+                                {data.description}
                             </p>
-                            <div className="px-3">
-                                <button className="btn bg-primary text-white rounded-pill px-4 mt-3 scale"
-                                onClick={() => setIsOpen(!isOpen)}>
-                                    {isOpen ? 'Masquer' : data.buttonText}
-                                </button>
-                            </div>
+                            
                         </div>
                     </div>
 

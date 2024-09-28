@@ -34,6 +34,7 @@ export const useMember = () => {
 	const [member_id, setMember_id] = useState('');
 	const [member_source, setMember_source] = useState('');
 	const [sales_representative_nationality, setSales_representative_nationality] = useState('');
+	const [parent_company, setParent_company] = useState('');
 
 	const [hasAcceptedConditions, setHasAcceptedConditions] = useState(false);
 
@@ -82,7 +83,8 @@ export const useMember = () => {
 		password,
 		member_id,
 		member_source,
-		sales_representative_nationality
+		sales_representative_nationality,
+		parent_company,
 		
         };
 
@@ -121,7 +123,8 @@ export const useMember = () => {
 		password,
 		member_id,
 		member_source,
-		sales_representative_nationality
+		sales_representative_nationality,
+		parent_company,
 		
         };
 
@@ -164,6 +167,7 @@ export const useMember = () => {
 		setMember_id(member.member_id ?? '');
 		setMember_source(member.member_source ?? '');
 		setSales_representative_nationality(member.sales_representative_nationality ?? '');
+		setParent_company(member.parent_company ?? '');
 		
     }
     const emptyMember = () => {
@@ -199,6 +203,7 @@ export const useMember = () => {
 		setMember_id('');
 		setMember_source('');
 		setSales_representative_nationality('');
+		setParent_company('');
 		
     }
 
@@ -235,6 +240,7 @@ export const useMember = () => {
 		member_id,
 		member_source,
 		sales_representative_nationality,
+		parent_company,
 		hasAcceptedConditions,
 		
         errors,
@@ -270,6 +276,7 @@ export const useMember = () => {
 		setMember_id,
 		setMember_source,
 		setSales_representative_nationality,
+		setParent_company,
 		setHasAcceptedConditions,
 		
         setId,
