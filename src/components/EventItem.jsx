@@ -1,13 +1,12 @@
-
 import { TbCalendar as CalendarIcon } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 export function EventItem(props) {
     return (
-        <div className="row align-items-strech">
-            <div className="col-12 col-lg-6 position-relative" style={{
+        <div className="row align-items-strech position-relative h-100">
+            <div className="col-12 col-lg-6" style={{
                 backgroundImage: `url(${props.event.img_url})`,
-                backgroundSize: '100% auto',
+                backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
             }}>
