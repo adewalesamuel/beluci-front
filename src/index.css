@@ -176,3 +176,51 @@ button.bg-primary:hover {
     max-height: 500px;
   }
 }
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.step-indicators {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.step-indicators .step-indicator {
+  text-align: center;
+}
+.step-indicators .step-indicator.active span {
+  background-color: #007bff;
+  color: white;
+}
+.step-indicators .step-indicator span {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+}
+
+.step-indicator {
+  position: relative;
+}
+
+/* Horizontal line between step indicators */
+.step-line {
+  position: absolute;
+  top: 20px; /* Adjust depending on the height of the circles */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+/* Active line color */
+.step-indicator.active ~ .step-indicator .step-line {
+  background-color: #007bff;
+}
