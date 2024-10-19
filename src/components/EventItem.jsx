@@ -3,27 +3,28 @@ import { Link } from "react-router-dom";
 
 export function EventItem(props) {
     return (
-        <div className="row align-items-strech position-relative h-100">
-            <div className="col-12 col-lg-6" style={{
-                backgroundImage: `url(${props.event.img_url})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-            }}>
-            </div>
-            <div className="col-12 col-lg-6 p-4 bg-primary 
-            text-white">
-                <p className="text-uppercase">
-                    {props.event.name}
-                </p>
-                <small>{props.event.address}</small>
-                <div className="my-2 d-flex flex-column">
-                    <div className="bg-white text-primary d-flex align-items-center p-1 mb-3">
-                        <CalendarIcon size={18} /> 
-                        {new Date(props.event.date).toLocaleDateString()}
+        <div className="align-items-strech shadow-sm bg-white">
+            <div className="row g-0">
+                <div className="col-12 col-lg-4">
+                    <img className="img-fluid h-100" src={props.event.img_url} 
+                    alt={props.event.name} style={{objectFit: 'cover'}} loading="lazy"/>
+                </div>
+                <div className="col-12 col-lg-8 p-3">
+                    <div className="p-3 p-lg-0 pr-lg-4">
+                        <div className="text-uppercase mb-0">
+                            {props.event.name}
+                        </div>
+                        <small>{props.event.address}</small>
+                        <div className="d-flex p-1">
+                            <CalendarIcon size={18} /> 
+                            {new Date(props.event.date).toLocaleDateString()}
+                        </div>
+                        <p>{props.event.description}</p>
+                        <Link className="btn btn-primary btn-sm" to={`/galleries/${props.event.id}`}>
+                            en savoir plus
+                        </Link>
                     </div>
                 </div>
-                <Link to={`/galleries/${props.event.id}`} className="stretched-link"></Link>
             </div>
         </div>
     )

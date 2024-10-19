@@ -24,7 +24,6 @@ export function PageView() {
     }
 
     const {pathname} = useLocation();
-    // const pageName = pathname.replace('/', '');
 
     const [page, setPage] = useState({});
     const [isLoading, setIsLoading] = useState(true);
@@ -43,8 +42,6 @@ export function PageView() {
         } catch (error) {
             if (error.status && error.status === 404)
                 setIsNotFound(true);
-
-            console.log(error);
         } finally {
             setIsLoading(false);
         }

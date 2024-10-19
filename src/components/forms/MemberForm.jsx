@@ -338,7 +338,7 @@ export function MemberForm(props) {
                 {props.step === props.stepList.COMPTE && 
                     <>
                         <div className="col-12">
-                            <h3 className='text-uppercase'>Information du représentant commercial</h3>
+                            <h3 className='text-uppercase'>Information du compte</h3>
                             <div className='form-group'>
                                 <p className='text-danger'>* Indique une question obligatoire</p>
                             </div>

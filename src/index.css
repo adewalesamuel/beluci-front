@@ -20,8 +20,12 @@ p, span {
   font-weight: 300;
 }
 
-.bg-primary {
+.bg-primary, .btn-primary {
   background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  border-color: var(--primary-color) !important;
 }
 
 .text-primary {
