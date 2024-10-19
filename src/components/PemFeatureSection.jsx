@@ -1,22 +1,24 @@
-import euImg from '../assets/images/eu.jpg';
-import enabelImg from '../assets/images/enabel.png';
-import belgiumFlag from '../assets/images/belgium-flag.png';
-import ciFlag from '../assets/images/ci-flag.png';
-
 export function PemFeatureSection({data}) {
     return (
-        <section className="py-5">
-            <h2 className="text-center  font-weight-light">{data.title}</h2>
+        <section className="pt-5">
+            <h2 className="text-center">{data.title}</h2>
             <div className='container px-3 px-md-5'>
                 <ul className="list-unstyled mt-3 row align-items-stretch">
                     {data.feature_item_list.map((featureItem, index) => {
                         return (
-                            <li className="col-12 col-md-6 col-lg-3 mb-3 py-2" key={index}>
-                                <div className="h-100" style={{backgroundColor: '#16263b'}}>
-                                    <img className='img-fluid' src={featureItem.imgUrl} 
-                                    alt={featureItem.number} />
-                                    <div className="text-white p-3 flex-fill" >
-                                        {featureItem.description}
+                            <li className="col-12 col-md-6 mb-3 mb-2" key={index}>
+                                <div className="row m-0 shadow-sm bg-white align-items-stretch h-100">
+                                    <div className="col-12 col-lg-4 px-0">
+                                        <img className="img-fluid h-100" src={featureItem.imgUrl} 
+                                        alt={featureItem.number} style={{objectFit: 'cover'}} loading="lazy"/>
+                                    </div>
+                                    <div className="col-12 col-lg-8 p-3">
+                                        <div className="p-3 p-lg-0 pr-lg-4">
+                                            <h5>
+                                                {featureItem.number ?? "Titre de la section"}
+                                            </h5>
+                                            <p>{featureItem.description}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -34,10 +36,10 @@ export function PemFeatureSection({data}) {
                         )
                     })}
                 </ul>
-                <ul className="list-unstyled mt-1">
+                <ul className="pl-4 pl-md-0 mt-1">
                     {data.about_item_list.map((ctaItem, index) => {
                         return (
-                            <li className="py-2 ml-0 ml-md-3" key={index}>
+                            <li className="ml-0 ml-md-3" key={index}>
                                 <h5 className="font-weight-light text-dark">
                                     {ctaItem.description}
                                 </h5>
@@ -49,12 +51,14 @@ export function PemFeatureSection({data}) {
                     {data.step_item_list.map((stepItem, index) => {
                         return (
                             <li className="col-12 col-lg-4 mb-2" key={index}>
-                                <div className="bg-primary text-white p-3 h-100">
-                                    <h3 className="font-weight-light mb-3">
+                                <div className="p-3 h-100" style={{backgroundColor: "#afb8c5"}}>
+                                    <h1 className="mb-3 d-flex align-items-center bg-primary 
+                                    text-white justify-content-center rounded-circle font-weight-lighter" 
+                                    style={{width: '4rem', height: '4rem'}}>
                                         {stepItem.number}
-                                    </h3>
-                                    <h6 className="text-uppercase mb-3 pt-3">{stepItem.title}</h6>
-                                    <small className="mb-3 d-block font-weight-lighter">
+                                    </h1>
+                                    <h6 className="text-uppercase mb-3 pt-3 text-primary">{stepItem.title}</h6>
+                                    <small className="mb-3 d-block">
                                         {stepItem.description}
                                     </small>
                                 </div>
@@ -62,37 +66,6 @@ export function PemFeatureSection({data}) {
                         )
                     })}
                 </ul>
-                <div className="py-3 my-5 text-center">
-                    <img src={euImg} width={180} className='img-fluid mr-3'/>
-                    <img src={enabelImg} width={180} className='img-fluid'/>
-                </div>
-                <div className="mx-auto" style={{maxWidth: '700px'}}>   
-                    <div className='bg-primary text-white text-center'>
-                        Formulaire d&#39;inscription aux projets
-                    </div>
-                    <div className='bg-light px-4 py-3'>
-                        <h5 className='py-2 d-inline-block w-100'>
-                            <img src={belgiumFlag} width={20} className='mr-2'/>
-                            Formulaire d&#39;inscription pour les entreprises belges : <br />
-                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be'>
-                                https://mr9tacmfl16.typeform.com/to/FMb1KGL9?typeform-source=stories.enabel.be
-                            </a>
-                        </h5>
-                        <h5 className='py-2 d-inline-block w-100'>
-                            <img src={ciFlag} width={20} className='mr-2'/>
-                            Formulaire d&#39;inscription pour les entreprises ivoirien(n)es : <br />
-                            <a target='_blank' href='https://mr9tacmfl16.typeform.com/to/qDkM40lM'>
-                                https://mr9tacmfl16.typeform.com/to/qDkM40lM
-                            </a>
-                        </h5>
-                        <h5 className='py-2 d-inline-block w-100'>
-                            Le site internet d’Enabel : <br />
-                            <a target='_blank' href='https://stories.enabel.be/pem-entrepreneuriat/index.html'>
-                                https://stories.enabel.be/pem-entrepreneuriat/index.html
-                            </a>
-                        </h5>
-                    </div>
-                </div>
             </div>
         </section>
     )

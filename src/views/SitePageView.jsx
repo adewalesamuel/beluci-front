@@ -17,6 +17,8 @@ export function PageView() {
         service: Components.ServiceSection,
         pemAbout: Components.PemAboutSection,
         pemFeature: Components.PemFeatureSection,
+        pemPartner: Components.PemPartnerSection,
+        pemLink: Components.PemLinkSection,
         memberAbout: Components.MemberAboutSection,
         eventAbout: Components.EventAboutSection,
         eventList: Components.EventListSection,

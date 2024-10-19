@@ -22,6 +22,8 @@ import { MemberAboutSection } from "./MemberAboutSection";
 import { Pagination } from "./Pagination";
 import { PemAboutSection } from "./PemAboutSection";
 import { PemFeatureSection } from "./PemFeatureSection";
+import { PemLinkSection } from "./PemLinkSection";
+import { PemPartnerSection } from "./PemPartnerSection";
 import { ServiceSection } from "./ServiceSection";
 import { Spinner } from "./Spinner";
 import { TitleHeader } from "./TitleHeader";
@@ -54,4 +56,6 @@ export const Components = {
     FileInput,
     ImageInput,
     GalleryTypeListSection,
+    PemPartnerSection,
+    PemLinkSection,
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function EventItem(props) {
     return (
-        <div className="align-items-strech shadow-sm bg-white">
+        <div className="shadow-sm bg-white">
             <div className="row g-0">
                 <div className="col-12 col-lg-4">
                     <img className="img-fluid h-100" src={props.event.img_url} 

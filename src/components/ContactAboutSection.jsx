@@ -79,21 +79,22 @@ export function ContactAboutSection({data}) {
                         </div>
                     </li>
                 </ul>
-                <div className='row mt-5 align-items-center'>
+                <div className='row mt-5 align-items-stretch mb-5'>
                     <div className="col-12 col-md-6 mt-3">
-                        <img src={mapImg} className="img-fluid"/>
+                        <img src={mapImg} className="img-fluid h-100" style={{objectFit: 'cover'}}/>
                     </div>
                     <div className="col-12 col-md-6 mt-3">
                         <Components.ErrorMessages>
                             {errorMesseges}
                         </Components.ErrorMessages>
-                        <form onSubmit={handleContactSubmit}>
+                        <form onSubmit={handleContactSubmit} className="shadow p-4">
+                            <h2>Parler à un conseiller</h2>
                             <div className="row">
                                 <div className="col-12">
                                     <div className="form-group">
-                                        <label htmlFor='fullname'>Nom et Prénom(s)</label>
+                                        <label htmlFor='fullname'>Nom</label>
                                         <input className="form-control" type='text' name="fullname" id="fullname" 
-                                        value={fullname} placeholder="Nom et Prénom(s)" disabled={isDisabled}
+                                        value={fullname} placeholder="Nom" disabled={isDisabled}
                                         onChange={e => setFullname(e.target.value)}/>
                                     </div>
                                 </div>
@@ -107,6 +108,12 @@ export function ContactAboutSection({data}) {
                                 </div>
                                 <div className="col-12">
                                     <div className="form-group">
+                                        <label htmlFor='email'>Téléphone</label>
+                                        <input className="form-control" type='tel' placeholder="Téléphone"/>
+                                    </div>
+                                </div>
+                                <div className="col-12">
+                                    <div className="form-group">
                                         <label htmlFor='message'>Votre message</label>
                                         <textarea className="form-control" name="message" id="message" 
                                         value={message} placeholder="Message" disabled={isDisabled}
@@ -116,7 +123,7 @@ export function ContactAboutSection({data}) {
                                 <div className="col-12">
                                     <div className="form-group">
                                         <button type='submit' className='btn btn-primary btn-lg btn-block w-100'>
-                                            {isDisabled ? "Chargement..." : "Envoyer le message"}
+                                            {isDisabled ? "Chargement..." : "Envoyer"}
                                         </button>
                                     </div>
                                 </div>
