@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Components } from '..';
 import { Utils } from '../../utils';
+import { PhoneNumberField } from './PhoneNumberField';
 
 export function MemberForm(props) {
     const {__} = Utils.String;
@@ -116,10 +117,18 @@ export function MemberForm(props) {
                                 <label htmlFor='share_capital'>{__('share_capital')}
                                     <span className='text-danger'>*</span>
                                 </label>
-                                <input className='form-control' type='number' id='share_capital' name='share_capital' 
-                                placeholder={__('share_capital')} value={props.useMember.share_capital ?? ''}
-                                disabled={props.isDisabled} onChange={ e => 
+                                <div className="input-group mb-3">
+                                    <input type="number" className="form-control" placeholder={__('share_capital')} 
+                                    aria-label={__('share_capital')} aria-describedby="share_capital" 
+                                    id='share_capital' name='share_capital' value={props.useMember.share_capital ?? ''}
+                                    disabled={props.isDisabled}  onChange={ e => 
                                     props.useMember.setShare_capital(e.target.value) ?? null}/>
+                                    <select className="input-group-text" id="share_capital">
+                                        <option value='FCFA'>FCFA</option>
+                                        <option value='EUR'>EUR</option>
+                                        <option value='USD'>USD</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -237,10 +246,10 @@ export function MemberForm(props) {
                                 <label htmlFor='phone_number'>{__('phone_number')}
                                     <span className='text-danger'>*</span>
                                 </label>
-                                <input className='form-control' type='text' id='phone_number' name='phone_number' 
-                                placeholder={__('phone_number')} value={props.useMember.phone_number ?? ''}
-                                disabled={props.isDisabled} onChange={ e => 
-                                    props.useMember.setPhone_number(e.target.value) ?? null}/>
+                                <PhoneNumberField name='phone_number' 
+                                placeholder={__('phone_number')} disabled={props.isDisabled}
+                                value={props.useMember.phone_number ?? ''}
+                                handleChange={props.useMember.setPhone_number}/>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -314,11 +323,10 @@ export function MemberForm(props) {
                                 <label htmlFor='sales_representative_phone_number'>{__('sales_representative_phone_number')}
                                     <span className='text-danger'>*</span>
                                 </label>
-                                <input className='form-control' type='text' id='sales_representative_phone_number' 
-                                name='sales_representative_phone_number' placeholder={__('sales_representative_phone_number')} 
+                                <PhoneNumberField name='sales_representative_phone_number' 
+                                placeholder={__('sales_representative_phone_number')} disabled={props.isDisabled}
                                 value={props.useMember.sales_representative_phone_number ?? ''}
-                                disabled={props.isDisabled} onChange={ e => 
-                                    props.useMember.setSales_representative_phone_number(e.target.value) ?? null}/>
+                                handleChange={props.useMember.setSales_representative_phone_number}/>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>

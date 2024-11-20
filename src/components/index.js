@@ -7,6 +7,7 @@ import { EventListSection } from "./EventListSection";
 import { FileInput } from "./FileInput";
 import { Footer } from "./Footer";
 import { MemberForm } from "./forms/MemberForm";
+import { PhoneNumberField } from "./forms/PhoneNumberField";
 import { GalleryTypeListSection } from "./GalleryTypeListSection";
 import { Header } from "./Header";
 import { HomeEventSection } from "./HomeEventSection";
@@ -58,4 +59,5 @@ export const Components = {
     GalleryTypeListSection,
     PemPartnerSection,
     PemLinkSection,
+    PhoneNumberField,
 }
