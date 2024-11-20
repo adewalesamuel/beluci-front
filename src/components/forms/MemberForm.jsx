@@ -223,13 +223,13 @@ export function MemberForm(props) {
                         </div>
                         <div className='col-12 col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='address'>{__('address')}
+                                <label htmlFor='email'>{__('email')}
                                     <span className='text-danger'>*</span>
                                 </label>
-                                <input className='form-control' type='text' id='address' name='address' 
-                                placeholder={__('address')} value={props.useMember.address ?? ''}
+                                <input className='form-control' type='text' id='email' name='email' 
+                                placeholder={__('email')} value={props.useMember.email ?? ''}
                                 disabled={props.isDisabled} onChange={ e => 
-                                    props.useMember.setAddress(e.target.value) ?? null}/>
+                                    props.useMember.setEmail(e.target.value) ?? null}/>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
@@ -338,20 +338,9 @@ export function MemberForm(props) {
                 {props.step === props.stepList.COMPTE && 
                     <>
                         <div className="col-12">
-                            <h3 className='text-uppercase'>Information du compte</h3>
+                            <h3 className='text-uppercase'>Conditions d&apos;utilisation</h3>
                             <div className='form-group'>
                                 <p className='text-danger'>* Indique une question obligatoire</p>
-                            </div>
-                        </div>
-                        <div className='col-12'>
-                            <div className='form-group'>
-                                <label htmlFor='email'>{__('email')}
-                                    <span className='text-danger'>*</span>
-                                </label>
-                                <input className='form-control' type='text' id='email' name='email' 
-                                placeholder={__('email')} value={props.useMember.email ?? ''}
-                                disabled={props.isDisabled} onChange={ e => 
-                                    props.useMember.setEmail(e.target.value) ?? null}/>
                             </div>
                         </div>
                         <div className='col-12 mb-3'>
@@ -381,7 +370,7 @@ export function MemberForm(props) {
                                 props.useMember.setHasAcceptedConditions(!props.useMember.hasAcceptedConditions)}/>
                                 <label className="form-check-label" htmlFor="flexCheckChecked">
                                     J&apos;accepte que mes informations soient partagées avec les autres membres de
-                                    la Chambre de Commerce belgo-luxembourgeoise de Côte d&apos;Ivoire.
+                                    la Chambre de Commerce Belge et Luxembourgeoise de Côte d&apos;Ivoire.
                                 </label>
                             </div>
                         </div>
