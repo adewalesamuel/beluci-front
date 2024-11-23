@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { Components } from '.';
 import logo from '../assets/logo.jpg';
 import { Api } from '../services/Api';
-// import { 
-//     FaLinkedinIn as LinkedInIcon, 
-//     FaFacebookF as FacebookIcon,
-//     FaInstagram as InstagramIcon } from 'react-icons/fa';
+import { 
+    FaLinkedinIn as LinkedInIcon, 
+    FaFacebookF as FacebookIcon} from 'react-icons/fa';
 
 export function Footer() {
     const abortController = new AbortController();
@@ -72,21 +71,24 @@ export function Footer() {
 
                 </div>
             </div>
-            {/* <div className="bg-primary text-white py-2">
+            <div className="bg-primary text-white py-2">
                 <div className="container">
-                    <div className="d-flex flex-wrap justify-content-between align-items-center">
-                        <small>
+                    <div className="d-flex flex-wrap justify-content-end align-items-center">
+                        {/* <small>
                             © {import.meta.env.VITE_APP_NAME} &nbsp;
                             {new Date().getFullYear()} Tous droits réservés
-                        </small>
-                        <small className="d-flex align-items-center">
-                            <a href=""><LinkedInIcon className="text-white ml-3"/></a>
-                            <a href=""><InstagramIcon className="text-white ml-3"/></a>
-                            <a href=""><FacebookIcon className="text-white ml-3"/></a>
-                        </small>
+                        </small> */}
+                        <div className="d-flex align-items-center">
+                            <a target='_blank' href="https://www.linkedin.com/company/77923555/admin/dashboard/">
+                                <LinkedInIcon size={20} className="text-white ml-3"/>
+                            </a>
+                            <a target='_blank' href="https://www.facebook.com/CCBeluci?locale=fr_FR">
+                                <FacebookIcon size={20} className="text-white ml-3"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
         </footer>
     )
