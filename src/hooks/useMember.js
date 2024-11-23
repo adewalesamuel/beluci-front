@@ -11,6 +11,7 @@ export const useMember = () => {
 	const [website_url, setWebsite_url] = useState('');
 	const [fullname, setFullname] = useState('');
 	const [creation_date, setCreation_date] = useState('');
+	const [creation_year, setCreation_year] = useState('');
 	const [employee_number, setEmployee_number] = useState('');
 	const [legal_status, setLegal_status] = useState('');
 	const [share_capital, setShare_capital] = useState('');
@@ -144,6 +145,7 @@ export const useMember = () => {
 		setWebsite_url(member.website_url ?? '');
 		setFullname(member.fullname ?? '');
 		setCreation_date(member.creation_date ?? '');
+		setCreation_year(member.creation_year ?? '');
 		setEmployee_number(member.employee_number ?? '');
 		setLegal_status(member.legal_status ?? '');
 		setShare_capital(member.share_capital ?? '');
@@ -180,6 +182,7 @@ export const useMember = () => {
 		setWebsite_url('');
 		setFullname('');
 		setCreation_date('');
+		setCreation_year('');
 		setEmployee_number('');
 		setLegal_status('');
 		setShare_capital('');
@@ -217,6 +220,7 @@ export const useMember = () => {
 		website_url,
 		fullname,
 		creation_date,
+		creation_year,
 		employee_number,
 		legal_status,
 		share_capital,
@@ -253,6 +257,7 @@ export const useMember = () => {
 		setWebsite_url,
 		setFullname,
 		setCreation_date,
+		setCreation_year,
 		setEmployee_number,
 		setLegal_status,
 		setShare_capital,

@@ -6,8 +6,17 @@ import { PhoneNumberField } from './PhoneNumberField';
 
 export function MemberForm(props) {
     const {__} = Utils.String;
+    const yearList = Utils.Date.getYearList(50, new Date().getFullYear());
 
     const [isOtherSource, setIsOtherSource] = useState(false);
+
+    const handleCreationYearChange = (year) => {
+        const creationDate = new Date(`${year}-01-01`)
+        .toLocaleDateString('en-CA');
+
+        props.useMember.setCreation_date(creationDate);
+        props.useMember.setCreation_year(year);
+    }
 
     const handleMemberSourceChange = e => {
         e.preventDefault();
@@ -84,10 +93,20 @@ export function MemberForm(props) {
                                 <label htmlFor='creation_date'>{__('creation_date')}
                                     <span className='text-danger'>*</span>
                                 </label>
-                                <input className='form-control' type='date' id='creation_date' name='creation_date' 
+                                <select className='form-select form-control' name='creation_year' id='creation_year'
+                                value={props.useMember.creation_year} onChange={e => 
+                                handleCreationYearChange(e.target.value)}> 
+                                    <option hidden>Selectionnez une année</option>
+                                    {yearList.map((year, index) => {
+                                        return (
+                                            <option value={year} key={index}>{year}</option>
+                                        )
+                                    })}
+                                </select>
+                                {/* <input className='form-control' type='date' id='creation_date' name='creation_date' 
                                 placeholder={__('creation_date')} value={props.useMember.creation_date ?? ''}
                                 disabled={props.isDisabled} onChange={ e => 
-                                    props.useMember.setCreation_date(e.target.value) ?? null}/>
+                                    props.useMember.setCreation_date(e.target.value) ?? null}/> */}
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
