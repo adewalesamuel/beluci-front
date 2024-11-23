@@ -163,9 +163,7 @@ export function MemberForm(props) {
                         </div>
                         <div className='col-12 col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='parent_company'>{__('parent_company')}
-                                    <span className='text-danger'>*</span>
-                                </label>
+                                <label htmlFor='parent_company'>{__('parent_company')}</label>
                                 <input className='form-control' type='text' id='parent_company' name='parent_company' 
                                 placeholder={__('parent_company')} value={props.useMember.parent_company ?? ''}
                                 disabled={props.isDisabled} onChange={ e => 
@@ -201,7 +199,9 @@ export function MemberForm(props) {
                         </div>
                         <div className='col-12 col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='commercial_register_url'>{__('commercial_register_url')}</label>
+                                <label htmlFor='commercial_register_url'>{__('commercial_register_url')}
+                                    <span className='text-danger'>*</span>
+                                </label>
                                 <Components.FileInput img_url={props.useMember.commercial_register_url ?? ''}
                                 handleFileChange={props.useMember.setCommercial_register_url}/>
                             </div>
@@ -273,21 +273,27 @@ export function MemberForm(props) {
                         </div>
                         <div className='col-12 col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='cover_letter_url'>{__('cover_letter_url')}</label>
+                                <label htmlFor='cover_letter_url'>{__('cover_letter_url')}
+                                    <span className='text-danger'>*</span>
+                                </label>
                                 <Components.FileInput img_url={props.useMember.cover_letter_url ?? ''}
                                 handleFileChange={props.useMember.setCover_letter_url}/>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='photo_url'>{__('photo_url')}</label>
+                                <label htmlFor='photo_url'>{__('photo_url')}
+                                    <span className='text-danger'>*</span>
+                                </label>
                                 <Components.ImageInput img_url={props.useMember.photo_url ?? ''}
                                 handleImageChange={props.useMember.setPhoto_url}/>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>
                             <div className='form-group mb-2'>
-                                <label htmlFor='idcard_url'>{__('idcard_url')}</label>
+                                <label htmlFor='idcard_url'>{__('idcard_url')}
+                                    <span className='text-danger'>*</span>
+                                </label>
                                 <Components.ImageInput img_url={props.useMember.idcard_url ?? ''}
                                 handleImageChange={props.useMember.setIdcard_url}/>
                             </div>
