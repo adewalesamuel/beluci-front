@@ -65,7 +65,11 @@ export function ContactAboutSection({data}) {
                             <div className="card-body">
                                 <EnvelopeIcon size={30} className="text-primary mb-3" />
                                 <h4>Email</h4>
-                                <div>info.beluci@gmail.com</div>
+                                <div>
+                                    <a href='mailto:info.beluci@gmail.com'>
+                                        info.beluci@gmail.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </li>
