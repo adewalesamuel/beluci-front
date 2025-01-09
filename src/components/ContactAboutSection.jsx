@@ -70,6 +70,16 @@ export function ContactAboutSection({data}) {
                                         info.beluci@gmail.com
                                     </a>
                                 </div>
+                                <div>
+                                    <a href='mailto:secretariat@beluci.ci'>
+                                        secretariat@beluci.ci
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href='mailto:info@beluci.ci'>
+                                        info@beluci.ci
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </li>
