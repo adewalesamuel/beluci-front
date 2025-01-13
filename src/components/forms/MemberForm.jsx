@@ -74,9 +74,9 @@ export function MemberForm(props) {
                             <div className='form-group'>
                                 <label htmlFor='head_office'>{__('head_office')}</label>
                                 <input className='form-control' type='text' id='head_office' name='head_office' 
-                                placeholder={__('head_office')} value={props.useMember.head_office ?? ''}
+                                placeholder={__('head_office')} value={props.useMember.address ?? ''}
                                 disabled={props.isDisabled} onChange={ e => 
-                                    props.useMember.setHead_office(e.target.value) ?? null}/>
+                                    props.useMember.setAddress(e.target.value) ?? null}/>
                             </div>
                         </div>
                         <div className='col-12 col-md-6'>

@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Hooks } from '../hooks';
 
 export function FileInput(props) {
-
     const useFile = Hooks.useFile();
 
     useEffect(() => {

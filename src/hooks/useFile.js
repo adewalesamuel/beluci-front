@@ -16,10 +16,10 @@ export const useFile = () => {
 
 			formData.append('file', file);
 
-			const {image_url} = await Services.FileService.fileStore(
+			const {file_url} = await Services.FileService.fileStore(
 				formData, abortController.signal);
-
-			setFileUrl(image_url);
+			
+			setFileUrl(file_url);
 		} catch(error) {
 			if (!('message' in error)) return;
 			setErrorMessage(error.message);
